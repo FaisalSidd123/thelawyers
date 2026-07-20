@@ -3,9 +3,9 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence, useScroll, useTransform, useSpring, useInView, useReducedMotion } from 'framer-motion';
-import { 
-  Phone, Mail, MapPin, Briefcase, Building, HeartHandshake, 
-  Shield, FileText, Compass, ClipboardList, CheckCircle2, 
+import {
+  Phone, Mail, MapPin, Briefcase, Building, HeartHandshake,
+  Shield, FileText, Compass, ClipboardList, CheckCircle2,
   ChevronRight, ArrowRight, BookOpen, Users, Bookmark, Award, X
 } from 'lucide-react';
 
@@ -180,7 +180,7 @@ export default function Home() {
     }
     setArticleWipingState('closing');
     setWipingArticle(article);
-    
+
     // Switch active view when curtains are fully closed (400ms)
     setTimeout(() => {
       setActiveArticle(article);
@@ -200,7 +200,7 @@ export default function Home() {
       return;
     }
     setArticleWipingState('closing');
-    
+
     setTimeout(() => {
       setActiveArticle(null);
       setArticleWipingState('opening');
@@ -428,7 +428,7 @@ export default function Home() {
 
               <div className="border-t border-brand-light-gray mt-16 pt-8 flex items-center justify-between text-xs text-brand-muted-gray">
                 <span>The Lawyers · Legal Briefs</span>
-                <button 
+                <button
                   onClick={handleArticleClose}
                   className="font-bold uppercase tracking-wider text-brand-navy hover:text-brand-burgundy transition-colors flex items-center gap-1.5"
                 >
@@ -449,11 +449,11 @@ export default function Home() {
 
           {/* HERO SECTION - "THE BRIEF" DOCUMENT HERO */}
           <section id="home" className="relative min-h-[95vh] flex items-center justify-center bg-gradient-to-b from-[#F7F4EE] via-[#F4F0E6] to-[#EAE4D5] px-6 md:px-12 pt-28 pb-16 overflow-hidden border-b border-brand-light-gray">
-            
+
             {/* Background architectural dim texture */}
-            <div className="absolute inset-0 z-0 opacity-[0.06] select-none pointer-events-none">
-              <Image 
-                src="/hero-arch.png"
+            <div className="absolute inset-0 z-0 opacity-[0.6] select-none pointer-events-none">
+              <Image
+                src="/hero-arch-modern-2.png"
                 alt="dim facade"
                 fill
                 priority
@@ -472,7 +472,7 @@ export default function Home() {
             {!prefersReducedMotion && (
               <>
                 {/* Stamp 1: Top-Left */}
-                <motion.div 
+                <motion.div
                   className="absolute left-6 md:left-24 top-24 md:top-36 z-10 hidden sm:block rotate-[-6deg] opacity-75 bg-brand-paper border border-brand-burgundy/25 p-3 rounded-sm shadow-md"
                   style={{ y: yStamp1 }}
                 >
@@ -485,7 +485,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* Stamp 2: Bottom-Right */}
-                <motion.div 
+                <motion.div
                   className="absolute right-6 md:right-20 bottom-24 md:bottom-36 z-10 hidden sm:block rotate-[4deg] opacity-75 bg-brand-paper border border-brand-navy/15 p-3.5 rounded-sm shadow-md"
                   style={{ y: yStamp2 }}
                 >
@@ -498,7 +498,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* Stamp 3: Middle-Right */}
-                <motion.div 
+                <motion.div
                   className="absolute right-[10%] top-28 z-10 hidden lg:block rotate-[-3deg] opacity-65 bg-brand-paper border border-brand-navy/15 p-2 rounded-sm shadow-md"
                   style={{ y: yStamp3 }}
                 >
@@ -517,20 +517,20 @@ export default function Home() {
 
               {/* Redacted Line-by-Line Headline */}
               <h1 className="font-serif text-[42px] md:text-[62px] lg:text-[76px] leading-[1.05] tracking-tight text-brand-navy mb-8 flex flex-col items-center select-text">
-                <RedactedLine 
-                  text="Legal Counsel," 
-                  delay={0.7} 
-                  prefersReducedMotion={prefersReducedMotion} 
+                <RedactedLine
+                  text="Legal Counsel,"
+                  delay={0.7}
+                  prefersReducedMotion={prefersReducedMotion}
                 />
-                <RedactedLine 
-                  text="Clearly Delivered." 
-                  delay={1.1} 
-                  prefersReducedMotion={prefersReducedMotion} 
+                <RedactedLine
+                  text="Clearly Delivered."
+                  delay={1.1}
+                  prefersReducedMotion={prefersReducedMotion}
                 />
               </h1>
 
               {/* Subheadline: Arrives after redaction animations */}
-              <motion.p 
+              <motion.p
                 className="text-[16px] md:text-[19px] text-brand-muted-gray leading-relaxed max-w-2xl mb-12"
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -540,7 +540,7 @@ export default function Home() {
               </motion.p>
 
               {/* CTA Row */}
-              <motion.div 
+              <motion.div
                 className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mb-12"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -562,7 +562,7 @@ export default function Home() {
               </motion.div>
 
               {/* Center Understated Trust Line */}
-              <motion.div 
+              <motion.div
                 className="text-[11px] tracking-wider text-brand-muted-gray flex flex-col sm:flex-row items-center gap-2 sm:gap-4 border-t border-brand-light-gray/60 pt-6 w-full max-w-md justify-center"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -585,7 +585,7 @@ export default function Home() {
           {/* PRACTICE AREAS - EXPANDING ACCORDION DOCKET */}
           <section id="practice-areas" className="bg-brand-paper py-24 px-6 md:px-12 border-b border-brand-light-gray">
             <div className="max-w-5xl mx-auto">
-              
+
               <div className="max-w-xl mb-16">
                 <span className="text-xs uppercase tracking-widest font-bold text-brand-burgundy mb-3 block">
                   Practice Docket
@@ -602,7 +602,7 @@ export default function Home() {
                   const isOpen = activeArea === idx;
 
                   return (
-                    <div 
+                    <div
                       key={area.title}
                       role="button"
                       tabIndex={0}
@@ -626,12 +626,11 @@ export default function Home() {
                             {area.title}
                           </h3>
                         </div>
-                        
+
                         {/* Dynamic Expand Indicators */}
                         <div className="flex items-center gap-4">
-                          <div className={`hidden md:flex w-8 h-8 rounded-full items-center justify-center border transition-all ${
-                            isOpen ? 'border-brand-burgundy bg-brand-burgundy text-brand-paper rotate-[45deg]' : 'border-brand-navy/10 text-brand-navy'
-                          }`}>
+                          <div className={`hidden md:flex w-8 h-8 rounded-full items-center justify-center border transition-all ${isOpen ? 'border-brand-burgundy bg-brand-burgundy text-brand-paper rotate-[45deg]' : 'border-brand-navy/10 text-brand-navy'
+                            }`}>
                             <X className="w-3.5 h-3.5" />
                           </div>
                         </div>
@@ -678,10 +677,10 @@ export default function Home() {
           {/* STATS / TRACK RECORD - THE SCALE REBALANCES */}
           <section className="bg-brand-navy text-brand-paper py-10 md:py-12 px-6 md:px-12 overflow-hidden border-b border-brand-navy">
             <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              
+
               {/* Left Column: Rebalancing SVG Scale */}
               <div ref={statsScaleRef} className="lg:col-span-5 flex flex-col items-center justify-center border border-brand-paper/5 bg-brand-charcoal/30 py-6 px-6 rounded-sm">
-                
+
                 <svg
                   width="80"
                   height="80"
@@ -721,7 +720,7 @@ export default function Home() {
 
               {/* Right Column: Statistics */}
               <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 justify-items-stretch">
-                
+
                 <div className="border-l border-brand-burgundy/40 pl-6 py-2">
                   <div className="font-serif text-4xl md:text-5xl font-semibold mb-2">
                     <Counter value={500} />+
@@ -757,7 +756,7 @@ export default function Home() {
           {/* ABOUT / APPROACH - ANNOTATED DOCUMENT MARGINALIA */}
           <section id="about" className="bg-brand-paper py-24 px-6 md:px-12 border-b border-brand-light-gray">
             <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-              
+
               {/* Left Column: Primary Copy (Wider) */}
               <div className="lg:col-span-8">
                 <span className="text-xs uppercase tracking-widest font-bold text-brand-burgundy mb-3 block">
@@ -766,7 +765,7 @@ export default function Home() {
                 <h2 className="font-serif text-3xl md:text-5xl text-brand-navy leading-[1.1] mb-8">
                   Client Advisory Formulated on Document Precision
                 </h2>
-                
+
                 <div className="space-y-6 text-brand-muted-gray text-base leading-relaxed max-w-3xl">
                   <p>
                     Modern business requires counsels that act on facts rather than templates. Whether setting up complex cross-border joint ventures or completing physical title sweeps in Karachi real estate, our partners coordinate records directly.
@@ -828,10 +827,10 @@ export default function Home() {
           {/* PROCESS - VERTICAL CONNECTOR SCROLL LINE */}
           <section id="how-we-work" className="bg-brand-paper py-24 px-6 md:px-12 border-b border-brand-light-gray">
             <div className="max-w-4xl mx-auto">
-              
+
               <div className="max-w-xl mb-20">
                 <span className="text-xs uppercase tracking-widest font-bold text-brand-burgundy mb-3 block">
-                   Casework Execution
+                  Casework Execution
                 </span>
                 <h2 className="font-serif text-3xl md:text-4xl text-brand-navy leading-tight">
                   A Step-by-Step Document Flow
@@ -840,19 +839,19 @@ export default function Home() {
 
               {/* Vertical Timeline container */}
               <div ref={timelineRef} className="relative pl-12 md:pl-20 space-y-16">
-                
+
                 {/* Scroll-drawn connector line background */}
                 <div className="absolute left-[21px] top-4 bottom-4 w-[2px] bg-brand-light-gray/70" />
-                
+
                 {/* Scroll progress drawing connector line */}
-                <motion.div 
+                <motion.div
                   className="absolute left-[21px] top-4 bottom-4 w-[2px] bg-brand-burgundy origin-top"
                   style={{ scaleY: lineScaleY }}
                 />
 
                 {processSteps.map((step) => (
                   <div key={step.number} className="relative group">
-                    
+
                     {/* Circle Dot Marker */}
                     <div className="absolute left-[-52px] md:left-[-60px] top-1.5 w-10 h-10 rounded-full border-2 border-brand-burgundy bg-brand-paper flex items-center justify-center z-10 transition-colors group-hover:bg-brand-burgundy group-hover:text-brand-paper">
                       <span className="font-serif text-[13px] font-bold text-brand-navy group-hover:text-brand-paper">
@@ -863,7 +862,7 @@ export default function Home() {
                     <h3 className="font-serif text-lg md:text-xl font-bold text-brand-navy mb-2 group-hover:text-brand-burgundy transition-colors">
                       {step.title}
                     </h3>
-                    
+
                     <p className="text-sm text-brand-muted-gray leading-relaxed max-w-xl">
                       {step.description}
                     </p>
@@ -879,7 +878,7 @@ export default function Home() {
           {/* TEAM - CASE-FILE PERSPECTIVE FLIP CARDS */}
           <section className="bg-brand-paper py-24 px-6 md:px-12 border-b border-brand-light-gray">
             <div className="max-w-5xl mx-auto">
-              
+
               <div className="max-w-xl mb-16">
                 <span className="text-xs uppercase tracking-widest font-bold text-brand-burgundy mb-3 block">
                   Counselors
@@ -891,9 +890,9 @@ export default function Home() {
 
               {/* 3D Cards Container */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
-                
+
                 {/* Advocate 1 */}
-                <div 
+                <div
                   className="group perspective-1000 w-full h-[400px] cursor-pointer relative"
                   onMouseEnter={() => setFlippedCard(0)}
                   onMouseLeave={() => setFlippedCard(null)}
@@ -909,9 +908,8 @@ export default function Home() {
                     }
                   }}
                 >
-                  <div className={`w-full h-full duration-700 preserve-3d relative transition-transform ${
-                    flippedCard === 0 ? '[transform:rotateY(180deg)]' : ''
-                  }`}>
+                  <div className={`w-full h-full duration-700 preserve-3d relative transition-transform ${flippedCard === 0 ? '[transform:rotateY(180deg)]' : ''
+                    }`}>
                     {/* Front Cover */}
                     <div className="absolute inset-0 backface-hidden w-full h-full bg-brand-light-gray/40 border border-brand-light-gray/80 overflow-hidden flex flex-col justify-between p-6">
                       <div className="relative w-full h-[250px] bg-brand-light-gray/60 overflow-hidden rounded-sm">
@@ -942,7 +940,7 @@ export default function Home() {
                         </span>
                         <h3 className="font-serif text-2xl font-bold text-brand-paper mb-1">Salman Ahmed</h3>
                         <p className="text-xs text-brand-light-gray/80 mb-6">Senior Court Advocate</p>
-                        
+
                         <div className="space-y-3.5 text-xs text-brand-light-gray/70">
                           <p className="leading-relaxed">
                             <span className="font-semibold text-brand-paper">Practice Core:</span> Clifton land claims, physical title audits, corporate insolvency, and arbitration briefs.
@@ -964,7 +962,7 @@ export default function Home() {
                 </div>
 
                 {/* Advocate 2 */}
-                <div 
+                <div
                   className="group perspective-1000 w-full h-[400px] cursor-pointer relative"
                   onMouseEnter={() => setFlippedCard(1)}
                   onMouseLeave={() => setFlippedCard(null)}
@@ -980,9 +978,8 @@ export default function Home() {
                     }
                   }}
                 >
-                  <div className={`w-full h-full duration-700 preserve-3d relative transition-transform ${
-                    flippedCard === 1 ? '[transform:rotateY(180deg)]' : ''
-                  }`}>
+                  <div className={`w-full h-full duration-700 preserve-3d relative transition-transform ${flippedCard === 1 ? '[transform:rotateY(180deg)]' : ''
+                    }`}>
                     {/* Front Cover */}
                     <div className="absolute inset-0 backface-hidden w-full h-full bg-brand-light-gray/40 border border-brand-light-gray/80 overflow-hidden flex flex-col justify-between p-6">
                       <div className="relative w-full h-[250px] bg-brand-light-gray/60 overflow-hidden rounded-sm">
@@ -1013,7 +1010,7 @@ export default function Home() {
                         </span>
                         <h3 className="font-serif text-2xl font-bold text-brand-paper mb-1">Zainab Noor</h3>
                         <p className="text-xs text-brand-light-gray/80 mb-6">Corporate & Advisory Partner</p>
-                        
+
                         <div className="space-y-3.5 text-xs text-brand-light-gray/70">
                           <p className="leading-relaxed">
                             <span className="font-semibold text-brand-paper">Practice Core:</span> SECP filings, beneficial ownership registries, joint ventures, and regulatory corporate clearances.
@@ -1042,7 +1039,7 @@ export default function Home() {
           {/* TESTIMONIALS - SINGLE OVERSIZED QUOTE */}
           <section className="bg-brand-paper py-24 px-6 md:px-12 border-b border-brand-light-gray overflow-hidden">
             <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-              
+
               <span className="text-xs uppercase tracking-widest font-bold text-brand-burgundy mb-8 block">
                 Brief Endorsements
               </span>
@@ -1065,7 +1062,7 @@ export default function Home() {
                     <p className="font-serif text-xl md:text-3xl text-brand-navy leading-relaxed italic max-w-3xl">
                       "{testimonials[activeTestimonial].quote}"
                     </p>
-                    
+
                     <div className="mt-8">
                       <span className="font-serif font-bold text-brand-navy text-sm md:text-base tracking-wider uppercase block">
                         {testimonials[activeTestimonial].author}
@@ -1080,7 +1077,7 @@ export default function Home() {
 
               {/* Understated Dash progress timer bar */}
               <div className="w-40 h-[2px] bg-brand-light-gray/80 mt-12 relative overflow-hidden rounded-full">
-                <motion.div 
+                <motion.div
                   key={activeTestimonial} // resets timeline fill-width on testimonial change
                   className="absolute left-0 top-0 bottom-0 bg-brand-burgundy"
                   initial={{ width: 0 }}
@@ -1095,7 +1092,7 @@ export default function Home() {
           {/* INSIGHTS / ARTICLES */}
           <section id="insights" className="bg-brand-paper py-24 px-6 md:px-12 border-b border-brand-light-gray">
             <div className="max-w-5xl mx-auto">
-              
+
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
                 <div className="max-w-xl">
                   <span className="text-xs uppercase tracking-widest font-bold text-brand-burgundy mb-3 block">
@@ -1110,8 +1107,8 @@ export default function Home() {
               {/* Articles Grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {articles.map((item) => (
-                  <article 
-                    key={item.title} 
+                  <article
+                    key={item.title}
                     onClick={() => handleArticleClick(item)}
                     className="bg-brand-paper border border-brand-light-gray p-8 flex flex-col justify-between hover:border-brand-burgundy/45 transition-all duration-300 group cursor-pointer"
                   >
@@ -1141,7 +1138,7 @@ export default function Home() {
           {/* CONTACT / INQUIRY */}
           <section id="contact" className="bg-brand-paper py-24 px-6 md:px-12">
             <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-              
+
               {/* Left Side: Intake Brief Form */}
               <div className="lg:col-span-7 bg-brand-paper border border-brand-light-gray p-8 md:p-12 shadow-[0_4px_30px_rgba(10,17,40,0.01)]">
                 <h2 className="font-serif text-2xl md:text-3xl text-brand-navy mb-3">
@@ -1230,7 +1227,7 @@ export default function Home() {
                   </button>
 
                   {submitted && (
-                    <motion.div 
+                    <motion.div
                       className="p-4 bg-emerald-50 border border-emerald-200 rounded-sm flex items-center gap-3 text-emerald-800 text-xs"
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -1251,7 +1248,7 @@ export default function Home() {
                   <h2 className="font-serif text-3xl text-brand-navy leading-tight mb-8">
                     Contact Coordinates
                   </h2>
-                  
+
                   <div className="space-y-8">
                     <div className="flex items-start gap-4">
                       <div className="p-2 bg-brand-light-gray/40 rounded-sm text-brand-burgundy">
@@ -1318,7 +1315,7 @@ export default function Home() {
         {/* FOOTER */}
         <footer className="bg-brand-navy text-brand-paper pt-16 pb-12 px-6 md:px-12 border-t border-brand-navy">
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-brand-light-gray/10">
-            
+
             {/* Logo column */}
             <div className="md:col-span-4 flex flex-col items-start gap-4">
               <Logo variant="dark" size="normal" />
