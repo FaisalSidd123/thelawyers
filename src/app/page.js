@@ -14,6 +14,7 @@ import SmoothScroll from '@/components/SmoothScroll';
 import Navbar from '@/components/Navbar';
 import LeadCaptureBar from '@/components/LeadCaptureBar';
 import Footer from '@/components/Footer';
+import Reviews from '@/components/Reviews';
 
 export default function Home() {
   // Modal State for Consultation / Inquiry
@@ -259,7 +260,7 @@ export default function Home() {
                       src="/service1.png"
                       alt="Corporate, Tax & Business Registration Services"
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-contain object-center group-hover:scale-105 transition-transform duration-500 bg-brand-navy/5"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent" />
                     <div className="absolute top-4 right-4">
@@ -328,7 +329,7 @@ export default function Home() {
                       src="/service2.png"
                       alt="Litigation & Dispute Resolution Legal Practice"
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-contain object-center group-hover:scale-105 transition-transform duration-500 bg-brand-navy/5"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent" />
                     <div className="absolute top-4 right-4">
@@ -511,45 +512,7 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              
-              {/* Testimonial 1 */}
-              <div className="bg-brand-cream/30 border border-brand-light-gray p-8 rounded-md shadow-xs">
-                <div className="flex items-center gap-1 text-amber-500 mb-4">
-                  <Star className="w-4 h-4 fill-amber-500" />
-                  <Star className="w-4 h-4 fill-amber-500" />
-                  <Star className="w-4 h-4 fill-amber-500" />
-                  <Star className="w-4 h-4 fill-amber-500" />
-                  <Star className="w-4 h-4 fill-amber-500" />
-                </div>
-                <p className="text-sm font-serif italic text-brand-navy/85 mb-6 leading-relaxed">
-                  "The Lawyers made our company registration and PSEB setup completely seamless. Handled everything professionally within days!"
-                </p>
-                <div className="border-t border-brand-light-gray/60 pt-4 flex items-center justify-between text-xs">
-                  <span className="font-semibold text-brand-navy">— CEO, Tech Solutions Firm</span>
-                  <span className="text-emerald-700 font-medium bg-emerald-50 px-2 py-0.5 rounded">Verified Business Client</span>
-                </div>
-              </div>
-
-              {/* Testimonial 2 */}
-              <div className="bg-brand-cream/30 border border-brand-light-gray p-8 rounded-md shadow-xs">
-                <div className="flex items-center gap-1 text-amber-500 mb-4">
-                  <Star className="w-4 h-4 fill-amber-500" />
-                  <Star className="w-4 h-4 fill-amber-500" />
-                  <Star className="w-4 h-4 fill-amber-500" />
-                  <Star className="w-4 h-4 fill-amber-500" />
-                  <Star className="w-4 h-4 fill-amber-500" />
-                </div>
-                <p className="text-sm font-serif italic text-brand-navy/85 mb-6 leading-relaxed">
-                  "Highly professional team for handling property legal matters. Their advice saved us from a costly land dispute."
-                </p>
-                <div className="border-t border-brand-light-gray/60 pt-4 flex items-center justify-between text-xs">
-                  <span className="font-semibold text-brand-navy">— Real Estate Investor</span>
-                  <span className="text-emerald-700 font-medium bg-emerald-50 px-2 py-0.5 rounded">Verified Litigation Client</span>
-                </div>
-              </div>
-
-            </div>
+            <Reviews />
 
           </div>
         </section>

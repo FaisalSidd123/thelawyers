@@ -14,12 +14,21 @@ export default function InsightsPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const categories = ['All', 'Intellectual Property', 'Legal Advice', 'Guide & Tutorials', 'Corporate & IP', 'Business Protection'];
+  const categories = ['All', 'Intellectual Property', 'Others'];
 
   const filteredArticles = articles.filter((art) => {
     const matchesSearch = art.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                           art.summary.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = selectedCategory === 'All' || art.category === selectedCategory;
+    
+    let matchesCategory = false;
+    if (selectedCategory === 'All') {
+      matchesCategory = true;
+    } else if (selectedCategory === 'Intellectual Property') {
+      matchesCategory = art.category === 'Intellectual Property';
+    } else if (selectedCategory === 'Others') {
+      matchesCategory = art.category !== 'Intellectual Property';
+    }
+
     return matchesSearch && matchesCategory;
   });
 
