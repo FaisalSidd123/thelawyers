@@ -9,23 +9,23 @@ export default function TopBar({ onOpenInquiry }) {
         {/* Top Left Details */}
         <div className="flex items-center gap-4 flex-wrap text-[11px] md:text-xs">
           <span className="flex items-center gap-1.5 opacity-90 hover:opacity-100 transition-opacity">
-            <MapPin className="w-3.5 h-3.5 text-brand-burgundy" />
+            <MapPin className="w-3.5 h-3.5 text-brand-paper/80" />
             <span>Islamabad & Lahore, Pakistan</span>
           </span>
           <span className="hidden md:inline text-brand-paper/30">|</span>
           <a 
             href="tel:+923366050615" 
-            className="flex items-center gap-1.5 hover:text-brand-burgundy transition-colors font-medium"
+            className="flex items-center gap-1.5 hover:text-brand-paper transition-colors font-medium"
           >
-            <Phone className="w-3.5 h-3.5 text-brand-burgundy" />
+            <Phone className="w-3.5 h-3.5 text-brand-paper/80" />
             <span>+92 336 6050615</span>
           </a>
           <span className="hidden md:inline text-brand-paper/30">|</span>
           <a 
             href="mailto:info@thelawyers.pk" 
-            className="flex items-center gap-1.5 hover:text-brand-burgundy transition-colors"
+            className="flex items-center gap-1.5 hover:text-brand-paper transition-colors"
           >
-            <Mail className="w-3.5 h-3.5 text-brand-burgundy" />
+            <Mail className="w-3.5 h-3.5 text-brand-paper/80" />
             <span>info@thelawyers.pk</span>
           </a>
         </div>

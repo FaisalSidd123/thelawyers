@@ -86,13 +86,13 @@ export default function Home() {
   return (
     <SmoothScroll>
       <div className="min-h-screen bg-brand-paper font-sans text-brand-navy selection:bg-brand-burgundy selection:text-brand-paper">
-        
+
         {/* Navigation & Announcement Bar */}
         <Navbar onOpenConsultation={() => setIsModalOpen(true)} />
 
         {/* SECTION 2: HERO SECTION (Above the Fold) with Dynamic Background Slideshow */}
         <section className="relative pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden min-h-[85vh] flex items-center justify-center">
-          
+
           {/* Dynamic Cross-Fading Premium Background Carousel */}
           <div className="absolute inset-0 z-0 bg-brand-navy overflow-hidden">
             <AnimatePresence mode="wait">
@@ -115,13 +115,13 @@ export default function Home() {
             </AnimatePresence>
 
             {/* Dark Luxury Gradient Overlays for perfect typography contrast */}
-            <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/90 via-brand-navy/75 to-brand-navy/95 backdrop-brightness-[0.85]" />
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-brand-navy/40 to-brand-navy/90" />
+            <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/70 via-brand-navy/40 to-brand-navy/85" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-transparent to-brand-navy/80" />
           </div>
 
           <div className="max-w-7xl mx-auto px-4 md:px-12 relative z-10 w-full">
             <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-              
+
               {/* Badge */}
               <motion.div
                 initial={{ opacity: 0, y: 15 }}
@@ -150,7 +150,7 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-base sm:text-lg md:text-xl text-brand-paper/90 max-w-3xl leading-relaxed mb-8 drop-shadow-sm font-light"
               >
-                From company registration and tax filing to complex litigation—we protect your business, family, and assets with proven legal expertise.
+                From company registration and tax filing to complex litigation we protect your business, family, and assets with proven legal expertise.
               </motion.p>
 
               {/* Action Buttons */}
@@ -179,24 +179,26 @@ export default function Home() {
                 </a>
               </motion.div>
 
-              {/* Quick-Trust Badges (Glassmorphism Dark Theme) */}
+              {/* Quick-Trust Badges */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-brand-paper/15 w-full"
+                className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 pt-6 border-t border-brand-paper/15 w-full"
               >
-                <div className="flex items-center justify-center gap-2.5 p-3.5 bg-brand-paper/10 backdrop-blur-md border border-brand-paper/15 rounded-sm shadow-sm text-brand-paper">
-                  <span className="text-xl">⚖️</span>
-                  <span className="text-xs font-medium text-brand-paper">FBR & SECP Registered Specialists</span>
+                <div className="flex items-center gap-2 text-brand-paper">
+                  <span className="text-lg" role="img" aria-label="Scale">⚖️</span>
+                  <span className="text-xs sm:text-sm font-medium">FBR & SECP Registered Specialists</span>
                 </div>
-                <div className="flex items-center justify-center gap-2.5 p-3.5 bg-brand-paper/10 backdrop-blur-md border border-brand-paper/15 rounded-sm shadow-sm text-brand-paper">
-                  <span className="text-xl">🏛️</span>
-                  <span className="text-xs font-medium text-brand-paper">Superior & Subordinate Court Practice</span>
+                <div className="hidden sm:block text-brand-paper/30">•</div>
+                <div className="flex items-center gap-2 text-brand-paper">
+                  <span className="text-lg" role="img" aria-label="Courthouse">🏛️</span>
+                  <span className="text-xs sm:text-sm font-medium">Superior & Subordinate Court Practice</span>
                 </div>
-                <div className="flex items-center justify-center gap-2.5 p-3.5 bg-brand-paper/10 backdrop-blur-md border border-brand-paper/15 rounded-sm shadow-sm text-brand-paper">
-                  <span className="text-xl">⚡</span>
-                  <span className="text-xs font-medium text-brand-paper">100% Digital & Hassle-Free Filing</span>
+                <div className="hidden sm:block text-brand-paper/30">•</div>
+                <div className="flex items-center gap-2 text-brand-paper">
+                  <span className="text-lg" role="img" aria-label="Lightning">⚡</span>
+                  <span className="text-xs sm:text-sm font-medium">100% Digital & Hassle-Free Filing</span>
                 </div>
               </motion.div>
 
@@ -208,11 +210,10 @@ export default function Home() {
                       key={idx}
                       onClick={() => setBgIndex(idx)}
                       aria-label={`Go to slide ${idx + 1}`}
-                      className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                        bgIndex === idx
+                      className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${bgIndex === idx
                           ? 'w-8 bg-amber-400'
                           : 'w-2 bg-brand-paper/40 hover:bg-brand-paper/70'
-                      }`}
+                        }`}
                     />
                   ))}
                 </div>
@@ -226,175 +227,18 @@ export default function Home() {
         </section>
 
         {/* SECTION 3: QUICK ACTION / LEAD CAPTURE BAR */}
-        <LeadCaptureBar />
 
-        {/* SECTION 4: PRACTICE AREAS (Two-Column Interactive Grid) */}
-        <section id="practice-areas" className="py-20 px-4 md:px-12 bg-brand-paper">
-          <div className="max-w-7xl mx-auto">
-            
-            <div className="text-center max-w-3xl mx-auto mb-14">
-              <span className="text-xs font-bold text-brand-burgundy uppercase tracking-widest">
-                Our Legal Practice
-              </span>
-              <h2 className="font-serif text-3xl md:text-4xl font-normal text-brand-navy mt-2">
-                Structured Practice Wings Tailored to Your Needs
-              </h2>
-              <p className="text-sm text-brand-navy/70 mt-3">
-                To keep corporate services and traditional legal cases organized, present them in two visual cards:
-              </p>
-            </div>
-
-            {/* Two-Column Interactive Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              
-              {/* Card 1: Corporate & Business */}
-              <motion.div
-                whileHover={{ y: -4 }}
-                transition={{ duration: 0.3 }}
-                className="bg-gradient-to-br from-brand-paper to-brand-cream/40 border border-brand-light-gray rounded-md overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group"
-              >
-                <div>
-                  {/* Service 1 Featured Image Header */}
-                  <div className="relative w-full h-56 md:h-64 overflow-hidden bg-brand-navy/5">
-                    <Image
-                      src="/service1.png"
-                      alt="Corporate, Tax & Business Registration Services"
-                      fill
-                      className="object-contain object-center group-hover:scale-105 transition-transform duration-500 bg-brand-navy/5"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent" />
-                    <div className="absolute top-4 right-4">
-                      <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 bg-brand-navy text-brand-paper rounded-full shadow-md">
-                        Corporate Wing
-                      </span>
-                    </div>
-                    <div className="absolute bottom-4 left-4 right-4 text-brand-paper">
-                      <span className="text-2xl">🏢</span>
-                      <h3 className="font-serif text-2xl font-semibold text-brand-paper drop-shadow-sm mt-1">
-                        Corporate, Tax & Business Registration
-                      </h3>
-                    </div>
-                  </div>
-
-                  <div className="p-8">
-                    <p className="text-xs text-brand-navy/75 mb-6 leading-relaxed">
-                      Fast, procedural, and end-to-end legal compliance for startups and businesses.
-                    </p>
-
-                    <ul className="flex flex-col gap-3.5 text-xs text-brand-navy/90 mb-8">
-                      <li className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-brand-burgundy shrink-0 mt-0.5" />
-                        <span><strong>SECP Company Formation:</strong> Private Limited, SMC, Single Member, Partnerships, & LLPs.</span>
-                      </li>
-                      <li className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-brand-burgundy shrink-0 mt-0.5" />
-                        <span><strong>Tax & Compliance Services:</strong> Annual Income Tax Returns (FBR), NTN, & Sales Tax (STRN) Registration.</span>
-                      </li>
-                      <li className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-brand-burgundy shrink-0 mt-0.5" />
-                        <span><strong>PSEB Registration:</strong> Call center & IT company registration for tax exemptions and export benefits.</span>
-                      </li>
-                      <li className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-brand-burgundy shrink-0 mt-0.5" />
-                        <span><strong>Chamber of Commerce:</strong> Membership & filing for international trade and legal status.</span>
-                      </li>
-                      <li className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-brand-burgundy shrink-0 mt-0.5" />
-                        <span><strong>NGO & Association Registration:</strong> Legal structuring under Societies Act and Trust Act.</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="px-8 pb-8">
-                  <a
-                    href="#contact"
-                    className="inline-flex items-center justify-center gap-2 bg-brand-navy hover:bg-brand-burgundy text-brand-paper py-3 px-6 rounded-sm text-xs font-semibold uppercase tracking-wider transition-colors w-full"
-                  >
-                    <span>Explore All Business Services →</span>
-                  </a>
-                </div>
-              </motion.div>
-
-              {/* Card 2: Litigation & Dispute */}
-              <motion.div
-                whileHover={{ y: -4 }}
-                transition={{ duration: 0.3 }}
-                className="bg-gradient-to-br from-brand-paper to-brand-cream/40 border border-brand-light-gray rounded-md overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group"
-              >
-                <div>
-                  {/* Service 2 Featured Image Header */}
-                  <div className="relative w-full h-56 md:h-64 overflow-hidden bg-brand-navy/5">
-                    <Image
-                      src="/service2.png"
-                      alt="Litigation & Dispute Resolution Legal Practice"
-                      fill
-                      className="object-contain object-center group-hover:scale-105 transition-transform duration-500 bg-brand-navy/5"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent" />
-                    <div className="absolute top-4 right-4">
-                      <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 bg-brand-burgundy text-brand-paper rounded-full shadow-md">
-                        Court Practice Wing
-                      </span>
-                    </div>
-                    <div className="absolute bottom-4 left-4 right-4 text-brand-paper">
-                      <span className="text-2xl">🏛️</span>
-                      <h3 className="font-serif text-2xl font-semibold text-brand-paper drop-shadow-sm mt-1">
-                        Litigation & Dispute Resolution
-                      </h3>
-                    </div>
-                  </div>
-
-                  <div className="p-8">
-                    <p className="text-xs text-brand-navy/75 mb-6 leading-relaxed">
-                      High-trust court representation by experienced attorneys.
-                    </p>
-
-                    <ul className="flex flex-col gap-3.5 text-xs text-brand-navy/90 mb-8">
-                      <li className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-brand-burgundy shrink-0 mt-0.5" />
-                        <span><strong>Corporate & Commercial Law:</strong> Contract drafting, shareholder disputes, and corporate compliance.</span>
-                      </li>
-                      <li className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-brand-burgundy shrink-0 mt-0.5" />
-                        <span><strong>Property & Real Estate Law:</strong> Land disputes, title verification, stay orders, and property transfer.</span>
-                      </li>
-                      <li className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-brand-burgundy shrink-0 mt-0.5" />
-                        <span><strong>Family & Civil Litigation:</strong> Khula/Divorce, child custody, inheritance disputes, and succession certificates.</span>
-                      </li>
-                      <li className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-brand-burgundy shrink-0 mt-0.5" />
-                        <span><strong>Criminal Law:</strong> Bail matters, FIR quashment, white-collar crimes, and NAB/Anti-Terrorism defense.</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="px-8 pb-8">
-                  <a
-                    href="#contact"
-                    className="inline-flex items-center justify-center gap-2 bg-brand-burgundy hover:bg-red-800 text-brand-paper py-3 px-6 rounded-sm text-xs font-semibold uppercase tracking-wider transition-colors w-full"
-                  >
-                    <span>Book a Legal Counsel Consultation →</span>
-                  </a>
-                </div>
-              </motion.div>
-
-            </div>
-          </div>
-        </section>
 
         {/* SECTION 5: "WHY CHOOSE THE LAWYERS?" (Trust & Process Section) */}
-        <section id="why-choose-us" className="py-20 px-4 md:px-12 bg-brand-cream/40 border-y border-brand-light-gray/60">
+        <section id="why-choose-us" className="py-12 md:py-16 px-4 md:px-12 bg-brand-cream/40 border-y border-brand-light-gray/60">
           <div className="max-w-7xl mx-auto">
-            
+
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-xs font-bold text-brand-burgundy uppercase tracking-widest">
                 Our Advantage
               </span>
               <h2 className="font-serif text-3xl md:text-4xl font-normal text-brand-navy mt-2">
-                "Why Choose The Lawyers?"
+                &quot;Why Choose The Lawyers?&quot;
               </h2>
               <p className="text-sm text-brand-navy/70 mt-2">
                 A Simple Choice for Complex Legal Issues
@@ -402,7 +246,7 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              
+
               {/* Pillar 1 */}
               <div className="bg-brand-paper p-8 border border-brand-light-gray rounded-sm shadow-xs relative">
                 <div className="text-4xl font-serif text-brand-burgundy/30 font-bold mb-4">01</div>
@@ -441,9 +285,9 @@ export default function Home() {
         </section>
 
         {/* SECTION 6: HOW WE WORK (3-Step Process Graphic) */}
-        <section id="how-we-work" className="py-20 px-4 md:px-12 bg-brand-navy text-brand-paper">
+        <section id="how-we-work" className="py-12 md:py-16 px-4 md:px-12 bg-brand-navy text-brand-paper">
           <div className="max-w-7xl mx-auto">
-            
+
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-xs font-bold text-amber-400 uppercase tracking-widest">
                 Seamless Legal Workflow
@@ -454,7 +298,7 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-              
+
               {/* Step 1 */}
               <div className="bg-brand-paper/5 border border-brand-paper/10 p-8 rounded-sm text-center flex flex-col items-center relative">
                 <div className="w-12 h-12 rounded-full bg-brand-burgundy text-brand-paper font-bold flex items-center justify-center text-lg mb-4 shadow-md">
@@ -500,9 +344,9 @@ export default function Home() {
         </section>
 
         {/* SECTION 7: CLIENT REVIEWS / SUCCESS STORIES SECTION */}
-        <section id="reviews" className="py-20 px-4 md:px-12 bg-brand-paper">
+        <section id="reviews" className="py-12 md:py-16 px-4 md:px-12 bg-brand-paper">
           <div className="max-w-7xl mx-auto">
-            
+
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-xs font-bold text-brand-burgundy uppercase tracking-widest">
                 Client Testimonials
@@ -518,9 +362,9 @@ export default function Home() {
         </section>
 
         {/* SECTION 8: CONSULTATION / CONTACT FORM */}
-        <section id="contact" className="py-20 px-4 md:px-12 bg-gradient-to-b from-brand-cream/40 to-brand-paper border-t border-brand-light-gray/60">
+        <section id="contact" className="py-12 md:py-16 px-4 md:px-12 bg-gradient-to-b from-brand-cream/40 to-brand-paper border-t border-brand-light-gray/60">
           <div className="max-w-4xl mx-auto">
-            
+
             <div className="text-center mb-12">
               <span className="text-xs font-bold text-brand-burgundy uppercase tracking-widest">
                 Direct Inquiry
@@ -534,7 +378,7 @@ export default function Home() {
             </div>
 
             <div className="bg-brand-paper border border-brand-light-gray rounded-md p-8 md:p-10 shadow-lg">
-              
+
               {submitted ? (
                 <div className="text-center py-10">
                   <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -553,7 +397,7 @@ export default function Home() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Full Name */}
                     <div>

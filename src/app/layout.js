@@ -26,14 +26,18 @@ export const metadata = {
   },
 };
 
+import GlobalWhatsApp from "@/components/GlobalWhatsApp";
+
 export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
       className={`${inter.variable} ${newsreader.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-brand-paper text-brand-navy selection:bg-brand-burgundy selection:text-brand-paper">
+      <body className="min-h-full flex flex-col bg-brand-paper text-brand-navy selection:bg-brand-burgundy selection:text-brand-paper" suppressHydrationWarning>
         {children}
+        <GlobalWhatsApp />
       </body>
     </html>
   );

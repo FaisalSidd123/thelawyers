@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from './Logo';
 import TopBar from './TopBar';
-import { Menu, X, Phone, ChevronDown, Building2, Scale, ShieldCheck, FileText, Globe, Users, ArrowRight } from 'lucide-react';
+import { Menu, X, Phone, ChevronDown, ChevronRight, Building2, Scale, ShieldCheck, FileText, Globe, Users, ArrowRight } from 'lucide-react';
 
 export default function Navbar({ onOpenConsultation }) {
   const pathname = usePathname();
@@ -42,11 +42,12 @@ export default function Navbar({ onOpenConsultation }) {
   ];
 
   const registrationServicesItems = [
-    { title: 'SECP Company Formation', href: pathname === '/' ? '#practice-areas' : '/#practice-areas', badge: 'Popular' },
-    { title: 'PSEB IT & Call Center Registration', href: pathname === '/' ? '#practice-areas' : '/#practice-areas', badge: 'Tax Exempt' },
-    { title: 'Sales Tax (STRN) & FBR NTN Filing', href: pathname === '/' ? '#practice-areas' : '/#practice-areas' },
-    { title: 'Chamber of Commerce Membership', href: pathname === '/' ? '#practice-areas' : '/#practice-areas' },
-    { title: 'NGO, Trust & Association Registration', href: pathname === '/' ? '#practice-areas' : '/#practice-areas' }
+    { title: 'SECP Company Formation', href: '/company-registration', badge: 'Popular' },
+    { title: 'PSEB IT & Call Center Registration', href: '/pseb-registration', badge: 'Tax Exempt' },
+    { title: 'Sales Tax (STRN) & FBR NTN Filing', href: '/sales-tax-registration' },
+    { title: 'Chamber of Commerce Membership', href: '/chamber-of-commerce-registration' },
+    { title: 'NGO, Trust & Association Registration', href: '/ngo-npo-trust-registration' },
+    { title: 'View All Compliance Services →', href: '/company-registration-compliance' }
   ];
 
   return (
@@ -206,13 +207,13 @@ export default function Navbar({ onOpenConsultation }) {
 
           {/* Right Action Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <button
-              onClick={onOpenConsultation}
+            <Link
+              href="/#contact"
               className="bg-brand-navy hover:bg-brand-burgundy text-brand-paper px-5 py-2.5 rounded-sm text-xs font-semibold tracking-wider uppercase transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer flex items-center gap-2"
             >
               <span>Book Consultation</span>
               <ArrowRight className="w-3.5 h-3.5" />
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Trigger */}
@@ -230,92 +231,101 @@ export default function Navbar({ onOpenConsultation }) {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            className="fixed inset-0 z-40 bg-brand-paper flex flex-col pt-24 px-6 overflow-y-auto lg:hidden"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            className="fixed inset-0 z-40 bg-brand-navy flex flex-col pt-32 px-6 pb-8 overflow-y-auto lg:hidden"
+            initial={{ opacity: 0, x: '100%' }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: '100%' }}
+            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
           >
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-6 flex-grow">
               <Link
                 href="/"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg font-serif text-brand-navy border-b border-brand-light-gray/50 pb-2"
+                className="text-xl font-serif text-brand-paper border-b border-brand-paper/10 pb-3 flex items-center justify-between group"
               >
-                Home
+                <span>Home</span>
+                <ChevronRight className="w-5 h-5 text-brand-paper/30 group-hover:text-amber-400 transition-colors" />
               </Link>
 
-              <div className="py-2 border-b border-brand-light-gray/50">
-                <div className="text-xs font-bold text-brand-burgundy uppercase tracking-wider mb-2">
+              <div className="py-2">
+                <div className="text-xs font-bold text-amber-400 uppercase tracking-wider mb-4 flex items-center gap-2">
+                  <div className="w-6 h-[1px] bg-amber-400/50"></div>
                   Practice Areas
                 </div>
-                {practiceAreasItems.map((item, idx) => (
-                  <Link
-                    key={idx}
-                    href={item.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="block py-1.5 text-sm text-brand-navy font-medium"
-                  >
-                    {item.title}
-                  </Link>
-                ))}
+                <div className="flex flex-col gap-4 pl-4 border-l border-brand-paper/10">
+                  {practiceAreasItems.map((item, idx) => (
+                    <Link
+                      key={idx}
+                      href={item.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="text-sm text-brand-paper/80 hover:text-brand-paper font-medium transition-colors"
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+                </div>
               </div>
 
-              <div className="py-2 border-b border-brand-light-gray/50">
-                <div className="text-xs font-bold text-brand-burgundy uppercase tracking-wider mb-2">
+              <div className="py-2">
+                <div className="text-xs font-bold text-amber-400 uppercase tracking-wider mb-4 flex items-center gap-2">
+                  <div className="w-6 h-[1px] bg-amber-400/50"></div>
                   Registration Services
                 </div>
-                {registrationServicesItems.map((item, idx) => (
-                  <Link
-                    key={idx}
-                    href={item.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="block py-1 text-sm text-brand-navy/90"
-                  >
-                    {item.title}
-                  </Link>
-                ))}
+                <div className="flex flex-col gap-4 pl-4 border-l border-brand-paper/10">
+                  {registrationServicesItems.map((item, idx) => (
+                    <Link
+                      key={idx}
+                      href={item.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="text-sm text-brand-paper/80 hover:text-brand-paper transition-colors"
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+                </div>
               </div>
 
               <Link
                 href="/about"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg font-serif text-brand-navy border-b border-brand-light-gray/50 pb-2"
+                className="text-xl font-serif text-brand-paper border-b border-brand-paper/10 pb-3 mt-2 flex items-center justify-between group"
               >
-                About Us
+                <span>About Us</span>
+                <ChevronRight className="w-5 h-5 text-brand-paper/30 group-hover:text-amber-400 transition-colors" />
               </Link>
 
               <Link
                 href="/insights"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg font-serif text-brand-navy border-b border-brand-light-gray/50 pb-2"
+                className="text-xl font-serif text-brand-paper border-b border-brand-paper/10 pb-3 flex items-center justify-between group"
               >
-                Legal Insights (Blog)
+                <span>Legal Insights (Blog)</span>
+                <ChevronRight className="w-5 h-5 text-brand-paper/30 group-hover:text-amber-400 transition-colors" />
               </Link>
 
               <Link
                 href={pathname === '/' ? '#contact' : '/#contact'}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg font-serif text-brand-navy border-b border-brand-light-gray/50 pb-2"
+                className="text-xl font-serif text-brand-paper border-b border-brand-paper/10 pb-3 flex items-center justify-between group"
               >
-                Contact Us
+                <span>Contact Us</span>
+                <ChevronRight className="w-5 h-5 text-brand-paper/30 group-hover:text-amber-400 transition-colors" />
               </Link>
             </div>
 
-            <div className="mt-8 mb-8 flex flex-col gap-3">
-              <button
-                onClick={() => {
-                  setIsMobileMenuOpen(false);
-                  if (onOpenConsultation) onOpenConsultation();
-                }}
-                className="w-full text-center bg-brand-burgundy text-brand-paper py-3 rounded-sm text-xs font-semibold tracking-widest uppercase"
+            <div className="mt-8 mb-4 flex flex-col gap-3">
+              <Link
+                href="/#contact"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="w-full text-center bg-brand-burgundy hover:bg-red-800 text-brand-paper py-3.5 rounded-sm text-xs font-semibold tracking-widest uppercase transition-colors"
               >
                 Book Consultation
-              </button>
+              </Link>
               <a
                 href="https://wa.me/923366050615"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full text-center bg-emerald-600 text-white py-3 rounded-sm text-xs font-semibold tracking-widest uppercase flex items-center justify-center gap-2"
+                className="w-full text-center bg-transparent border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white py-3.5 rounded-sm text-xs font-semibold tracking-widest uppercase flex items-center justify-center gap-2 transition-colors"
               >
                 WhatsApp Direct Chat
               </a>
