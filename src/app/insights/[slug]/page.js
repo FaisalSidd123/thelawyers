@@ -10,6 +10,9 @@ import SmoothScroll from '@/components/SmoothScroll';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+
 export default function ArticleDetailPage({ params }) {
   const resolvedParams = use(params);
   const { slug } = resolvedParams;
@@ -81,53 +84,53 @@ export default function ArticleDetailPage({ params }) {
         </section>
 
         {/* Article Body Content */}
-        <section className="py-16 px-4 md:px-8 bg-brand-paper">
+        <section className="py-12 md:py-16 px-4 md:px-8 bg-brand-paper">
           <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
             
             {/* Main Article Content */}
             <div className="lg:col-span-8">
-              <div className="prose prose-navy max-w-none text-xs sm:text-sm leading-relaxed text-brand-navy/90 space-y-6">
-                
-                {/* Parse Markdown-like Headings & Sections */}
-                {article.content.split('\n\n').map((paragraph, idx) => {
-                  if (paragraph.startsWith('# ')) {
-                    return null; // Skip main title as rendered in header
-                  } else if (paragraph.startsWith('## ')) {
-                    return (
-                      <h2 key={idx} className="font-serif text-2xl font-semibold text-brand-navy mt-8 mb-4 border-b border-brand-light-gray/60 pb-2">
-                        {paragraph.replace('## ', '')}
-                      </h2>
-                    );
-                  } else if (paragraph.startsWith('### ')) {
-                    return (
-                      <h3 key={idx} className="font-serif text-lg font-semibold text-brand-navy mt-6 mb-3">
-                        {paragraph.replace('### ', '')}
-                      </h3>
-                    );
-                  } else if (paragraph.startsWith('> ')) {
-                    return (
-                      <div key={idx} className="bg-brand-cream/60 border-l-4 border-amber-500 p-4 rounded-sm text-xs sm:text-sm text-brand-navy my-6 shadow-xs">
-                        {paragraph.replace('> ', '')}
-                      </div>
-                    );
-                  } else if (paragraph.startsWith('- ')) {
-                    const items = paragraph.split('\n- ');
-                    return (
-                      <ul key={idx} className="list-disc list-inside space-y-2 text-xs sm:text-sm text-brand-navy/90 my-4 pl-2">
-                        {items.map((item, i) => (
-                          <li key={i}>{item.replace('- ', '')}</li>
-                        ))}
-                      </ul>
-                    );
-                  } else {
-                    return (
-                      <p key={idx} className="text-xs sm:text-sm text-brand-navy/85 leading-relaxed">
-                        {paragraph}
-                      </p>
-                    );
-                  }
-                })}
-
+              <div className="prose prose-navy max-w-none text-brand-navy/90">
+                <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
+                  components={{
+                    h1: ({ node, ...props }) => null, // Skip duplicate main title
+                    h2: ({ node, ...props }) => (
+                      <h2 className="font-serif text-xl sm:text-2xl md:text-3xl font-semibold text-brand-navy mt-8 mb-4 border-b border-brand-light-gray/60 pb-2.5 leading-snug" {...props} />
+                    ),
+                    h3: ({ node, ...props }) => (
+                      <h3 className="font-serif text-lg sm:text-xl font-semibold text-brand-navy mt-6 mb-3 leading-snug" {...props} />
+                    ),
+                    p: ({ node, ...props }) => (
+                      <p className="text-xs sm:text-sm md:text-base text-brand-navy/85 leading-relaxed mb-4 font-normal" {...props} />
+                    ),
+                    strong: ({ node, ...props }) => (
+                      <strong className="font-bold text-brand-navy" {...props} />
+                    ),
+                    em: ({ node, ...props }) => (
+                      <em className="italic text-brand-navy/90" {...props} />
+                    ),
+                    ul: ({ node, ...props }) => (
+                      <ul className="space-y-2.5 my-4 pl-5 text-xs sm:text-sm md:text-base text-brand-navy/85 list-disc leading-relaxed" {...props} />
+                    ),
+                    ol: ({ node, ...props }) => (
+                      <ol className="space-y-2.5 my-4 pl-5 text-xs sm:text-sm md:text-base text-brand-navy/85 list-decimal leading-relaxed" {...props} />
+                    ),
+                    li: ({ node, ...props }) => (
+                      <li className="pl-1" {...props} />
+                    ),
+                    blockquote: ({ node, ...props }) => (
+                      <blockquote className="bg-brand-cream/60 border-l-4 border-amber-500 p-4 md:p-5 rounded-sm text-xs sm:text-sm md:text-base text-brand-navy my-6 font-medium shadow-xs leading-relaxed" {...props} />
+                    ),
+                    hr: ({ node, ...props }) => (
+                      <hr className="my-8 border-brand-light-gray/70" {...props} />
+                    ),
+                    a: ({ node, ...props }) => (
+                      <a className="text-brand-burgundy font-semibold hover:underline" {...props} />
+                    ),
+                  }}
+                >
+                  {article.content}
+                </ReactMarkdown>
               </div>
 
               {/* In-Article WhatsApp Floating CTA Box */}
