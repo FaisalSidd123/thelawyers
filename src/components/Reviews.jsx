@@ -24,7 +24,7 @@ const initialReviews = [
   {
     id: 3,
     name: 'Shahid Mustafa Mastoi',
-    badge: 'Local Guide',
+    badge: 'Verified Google Review',
     rating: 5,
     text: 'I highly recommend The Lawyers for their professional and reliable legal services. They have successfully handled my company registration, annual renewals, FBR matters, and other legal requirements with great efficiency. Their team is top notch.',
     date: '2 months ago'
@@ -168,7 +168,7 @@ const initialReviews = [
   {
     id: 21,
     name: 'Rana Arslan Ali Khan',
-    badge: 'Local Guide',
+    badge: 'Verified Google Review',
     rating: 5,
     text: 'Very Good Experience They are very professional and also guide me accordingly',
     date: '2 months ago'
@@ -208,7 +208,7 @@ const initialReviews = [
   {
     id: 26,
     name: 'Sukoon Tea',
-    badge: 'Local Guide',
+    badge: 'Verified Google Review',
     rating: 5,
     text: 'Outstanding support and clear guidance for entity setup.',
     date: '2 months ago'

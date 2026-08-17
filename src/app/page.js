@@ -95,24 +95,26 @@ export default function Home() {
 
           {/* Dynamic Cross-Fading Premium Background Carousel */}
           <div className="absolute inset-0 z-0 bg-brand-navy overflow-hidden">
-            <AnimatePresence mode="wait">
+            {heroBackgrounds.map((bg, idx) => (
               <motion.div
-                key={bgIndex}
-                initial={{ opacity: 0, scale: 1.08 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 1.02 }}
-                transition={{ duration: 1.4, ease: [0.25, 1, 0.5, 1] }}
-                className="absolute inset-0 w-full h-full"
+                key={idx}
+                initial={false}
+                animate={{
+                  opacity: idx === bgIndex ? 1 : 0,
+                  scale: idx === bgIndex ? 1 : 1.06,
+                }}
+                transition={{ duration: 1.2, ease: 'easeInOut' }}
+                className="absolute inset-0 w-full h-full pointer-events-none"
               >
                 <Image
-                  src={heroBackgrounds[bgIndex].url}
-                  alt={heroBackgrounds[bgIndex].caption}
+                  src={bg.url}
+                  alt={bg.caption}
                   fill
-                  priority
+                  priority={idx === 0}
                   className="object-cover object-center"
                 />
               </motion.div>
-            </AnimatePresence>
+            ))}
 
             {/* Dark Luxury Gradient Overlays for perfect typography contrast */}
             <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/70 via-brand-navy/40 to-brand-navy/85" />
