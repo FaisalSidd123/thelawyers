@@ -15,7 +15,7 @@ export default function SalesTaxRegistration() {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
+        <section className="pt-20 pb-10 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-navy/95 to-brand-burgundy/20 z-0" />
           <div className="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 text-left">
@@ -61,31 +61,33 @@ export default function SalesTaxRegistration() {
         </section>
 
         {/* Detailed Overview */}
-        <section className="py-20 px-4 md:px-12 bg-brand-paper">
+        <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-paper">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl text-brand-navy mb-6">Overview</h2>
-            <p className="text-brand-navy/80 leading-relaxed mb-12">
+            <h2 className="font-serif text-2xl md:text-3xl text-brand-navy mb-4 md:mb-6">Overview</h2>
+            <p className="text-sm md:text-base text-brand-navy/80 leading-relaxed mb-8 md:mb-12">
               If your business is engaged in manufacturing, importing, exporting, wholesale, or providing taxable services, Sales Tax Registration is a strict statutory requirement. Registering for Sales Tax equips your business with a Sales Tax Registration Number (STRN), enabling you to legally collect sales tax, issue sales tax invoices, and claim input tax deductions on your business purchases.
               <br/><br/>
               At The Lawyers, we handle complete sales tax registration across both federal and provincial jurisdictions—guaranteeing seamless portal setup, biometric coordination, and post-registration compliance.
             </p>
 
-            <h3 className="font-serif text-2xl text-brand-navy mb-6">Sales Tax Jurisdictions We Cover</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Federal Sales Tax (FBR)
+            <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Sales Tax Jurisdictions We Cover</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-12">
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Federal Sales Tax (FBR)</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   For businesses dealing in the supply, manufacture, import, or export of goods.
                 </p>
               </div>
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Provincial Sales Tax Authorities
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Provincial Sales Tax Authorities</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed mb-2">For service-based businesses registered under:</p>
-                <ul className="text-sm text-brand-navy/70 list-disc pl-5">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed mb-2">For service-based businesses registered under:</p>
+                <ul className="text-xs md:text-sm text-brand-navy/70 list-disc pl-5">
                   <li>Punjab Revenue Authority (PRA)</li>
                   <li>Sindh Revenue Board (SRB)</li>
                   <li>Khyber Pakhtunkhwa Revenue Authority (KPRA)</li>
@@ -95,9 +97,9 @@ export default function SalesTaxRegistration() {
               </div>
             </div>
 
-            <div className="bg-brand-navy text-brand-paper p-8 rounded-md mb-12 text-center">
-              <h4 className="font-serif text-xl mb-4">Need Guidance on Federal vs. Provincial Sales Tax?</h4>
-              <p className="text-sm text-brand-paper/80 mb-6 max-w-2xl mx-auto">
+            <div className="bg-brand-navy text-brand-paper p-6 md:p-8 rounded-md mb-8 md:mb-12 text-center">
+              <h4 className="font-serif text-lg md:text-xl mb-3 md:mb-4">Need Guidance on Federal vs. Provincial Sales Tax?</h4>
+              <p className="text-xs md:text-sm text-brand-paper/80 mb-5 md:mb-6 max-w-2xl mx-auto">
                 Supplying goods falls under the Federal Board of Revenue (FBR), while providing services falls under your relevant provincial revenue authority. Speak with our tax experts to map your business correctly.
               </p>
               <a
@@ -110,27 +112,27 @@ export default function SalesTaxRegistration() {
               </a>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mb-6 md:mb-12">
               <div>
-                <h3 className="font-serif text-2xl text-brand-navy mb-6">Our Comprehensive Service Includes</h3>
-                <ul className="space-y-3 text-sm text-brand-navy/80">
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Application preparation and online filing on the FBR IRIS / Provincial portals.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Assistance with mandatory Biometric Verification at e-Sahulat centers.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Physical premises inspection verification guidance (for FBR Sales Tax on goods).</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Generation of Sales Tax Registration Certificate and portal access setup.</li>
+                <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Our Comprehensive Service Includes</h3>
+                <ul className="space-y-2.5 text-xs md:text-sm text-brand-navy/80">
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Application preparation and online filing on the FBR IRIS / Provincial portals.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Assistance with mandatory Biometric Verification at e-Sahulat centers.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Physical premises inspection verification guidance (for FBR Sales Tax on goods).</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Generation of Sales Tax Registration Certificate and portal access setup.</span></li>
                 </ul>
               </div>
 
               <div>
-                <h3 className="font-serif text-2xl text-brand-navy mb-6">Documents Required</h3>
-                <p className="text-sm text-brand-navy/70 mb-4">
+                <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Documents Required</h3>
+                <p className="text-xs md:text-sm text-brand-navy/70 mb-4">
                   Documents vary based on your desired registration type. Here are some basic requirements to get started:
                 </p>
-                <ul className="space-y-3 text-sm text-brand-navy/80">
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> Business NTN Certificate and CNICs of Directors/Owners.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> Commercial bank account maintenance certificate with IBAN.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> Paid commercial utility bill (Electricity/Gas) and tenancy agreement of business premises.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> GPS-tagged photographs of business premises, main entrance, and utility meter.</li>
+                <ul className="space-y-2.5 text-xs md:text-sm text-brand-navy/80">
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span>Business NTN Certificate and CNICs of Directors/Owners.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span>Commercial bank account maintenance certificate with IBAN.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span>Paid commercial utility bill (Electricity/Gas) and tenancy agreement of business premises.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span>GPS-tagged photographs of business premises, main entrance, and utility meter.</span></li>
                 </ul>
               </div>
             </div>

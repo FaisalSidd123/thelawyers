@@ -15,7 +15,7 @@ export default function PswRegistration() {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
+        <section className="pt-20 pb-10 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-navy/95 to-brand-burgundy/20 z-0" />
           <div className="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 text-left">
@@ -61,18 +61,18 @@ export default function PswRegistration() {
         </section>
 
         {/* Detailed Overview */}
-        <section className="py-20 px-4 md:px-12 bg-brand-paper">
+        <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-paper">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl text-brand-navy mb-6">Overview</h2>
-            <p className="text-brand-navy/80 leading-relaxed mb-12">
+            <h2 className="font-serif text-2xl md:text-3xl text-brand-navy mb-4 md:mb-6">Overview</h2>
+            <p className="text-sm md:text-base text-brand-navy/80 leading-relaxed mb-8 md:mb-12">
               Whether you are importing raw materials, exporting finished products, operating a customs clearing agency, or managing logistics, PSW registration is legally required to execute trade declarations, process Goods Declarations (GD), obtain regulatory LPCOs (Licenses, Permits, Certificates, and Others), and secure foreign exchange remittance approvals from commercial banks (replacing legacy Form I and Form E mechanisms).
               <br/><br/>
               At The Lawyers, we handle complete PSW onboarding, biometric verification coordination, banking profile linking, WeBOC role association, and portal lock resolutions—ensuring your import/export operations launch without regulatory delays.
             </p>
 
-            <div className="bg-brand-navy text-brand-paper p-8 rounded-md mb-12 text-center">
-              <h4 className="font-serif text-xl mb-4">Starting an Import/Export Business or Stuck in Customs Clearance?</h4>
-              <p className="text-sm text-brand-paper/80 mb-6 max-w-2xl mx-auto">
+            <div className="bg-brand-navy text-brand-paper p-6 md:p-8 rounded-md mb-8 md:mb-12 text-center">
+              <h4 className="font-serif text-lg md:text-xl mb-3 md:mb-4">Starting an Import/Export Business or Stuck in Customs Clearance?</h4>
+              <p className="text-xs md:text-sm text-brand-paper/80 mb-5 md:mb-6 max-w-2xl mx-auto">
                 Mismatched FBR NTN data, unlinked corporate bank accounts, or biometric verification errors can cause immediate account locks on the PSW portal. Speak with our customs legal experts to activate your trader profile seamlessly.
               </p>
               <a
@@ -85,27 +85,27 @@ export default function PswRegistration() {
               </a>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mb-6 md:mb-12">
               <div>
-                <h3 className="font-serif text-2xl text-brand-navy mb-6">Our PSW Onboarding Package</h3>
-                <ul className="space-y-3 text-sm text-brand-navy/80">
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Complete PSW Subscription profile setup.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Biometric verification guidance at e-Sahulat / Customs touchpoints.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Integration of WebOC ID, Sales Tax (STRN), and NTN with the PSW ecosystem.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Trader Profile Activation for Commercial and Non-Commercial Importers/Exporters.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Resolution of PSW profile locks, banking verification errors, and regulatory approvals.</li>
+                <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Our PSW Onboarding Package</h3>
+                <ul className="space-y-2.5 text-xs md:text-sm text-brand-navy/80">
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Complete PSW Subscription profile setup.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Biometric verification guidance at e-Sahulat / Customs touchpoints.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Integration of WebOC ID, Sales Tax (STRN), and NTN with the PSW ecosystem.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Trader Profile Activation for Commercial and Non-Commercial Importers/Exporters.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Resolution of PSW profile locks, banking verification errors, and regulatory approvals.</span></li>
                 </ul>
               </div>
 
               <div>
-                <h3 className="font-serif text-2xl text-brand-navy mb-6">Importing Regulated Goods or Food Items?</h3>
-                <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                  <p className="text-sm text-brand-navy/70 leading-relaxed mb-4">
+                <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Importing Regulated Goods or Food Items?</h3>
+                <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                  <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed mb-4">
                     Certain commodities require mandatory pre-shipment approvals, phytosanitary certificates, or PSQCA compliance before customs arrival. Let The Lawyers review your trade HS codes and secure necessary regulatory clearances.
                   </p>
                   <a
                     href="https://wa.me/923366050615"
-                    className="text-brand-burgundy font-semibold text-sm hover:underline"
+                    className="text-brand-burgundy font-semibold text-xs md:text-sm hover:underline"
                   >
                     Call Our Trade Practice Team
                   </a>
@@ -117,7 +117,7 @@ export default function PswRegistration() {
         </section>
 
         {/* FAQs */}
-        <section className="py-20 px-4 md:px-12 bg-brand-cream/40">
+        <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-cream/40">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-serif text-3xl text-brand-navy mb-10">Frequently Asked Questions</h2>
             <div className="space-y-6">

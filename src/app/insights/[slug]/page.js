@@ -42,10 +42,6 @@ export default function ArticleDetailPage({ params }) {
             </Link>
 
             <div className="flex items-center gap-3 text-xs text-brand-muted-gray mb-4 flex-wrap">
-              <span className="px-3 py-0.5 rounded-full bg-brand-burgundy/10 text-brand-burgundy font-bold">
-                {article.category}
-              </span>
-              <span>•</span>
               <span className="flex items-center gap-1">
                 <Calendar className="w-3.5 h-3.5" />
                 {article.date}

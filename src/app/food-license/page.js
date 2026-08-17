@@ -15,7 +15,7 @@ export default function FoodLicense() {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
+        <section className="pt-20 pb-10 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-navy/95 to-brand-burgundy/20 z-0" />
           <div className="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 text-left">
@@ -61,18 +61,18 @@ export default function FoodLicense() {
         </section>
 
         {/* Detailed Overview */}
-        <section className="py-20 px-4 md:px-12 bg-brand-paper">
+        <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-paper">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl text-brand-navy mb-6">Overview</h2>
-            <p className="text-brand-navy/80 leading-relaxed mb-12">
+            <h2 className="font-serif text-2xl md:text-3xl text-brand-navy mb-4 md:mb-6">Overview</h2>
+            <p className="text-sm md:text-base text-brand-navy/80 leading-relaxed mb-8 md:mb-12">
               Operating any food-related business in Pakistan without a valid license from the relevant provincial or federal Food Authority is a severe legal violation. Unlicensed operations face immediate venue sealing, heavy administrative fines, product confiscation, and criminal prosecution.
               <br/><br/>
               At The Lawyers, we guide food entrepreneurs, restaurant owners, manufacturers, and importers through the end-to-end licensing process—ensuring kitchen layout compliance, staff medical clearances, hassle-free inspections, and prompt license issuance.
             </p>
 
-            <div className="bg-brand-navy text-brand-paper p-8 rounded-md mb-12 text-center">
-              <h4 className="font-serif text-xl mb-4">Opening a Restaurant, Cloud Kitchen, or Food Factory?</h4>
-              <p className="text-sm text-brand-paper/80 mb-6 max-w-2xl mx-auto">
+            <div className="bg-brand-navy text-brand-paper p-6 md:p-8 rounded-md mb-8 md:mb-12 text-center">
+              <h4 className="font-serif text-lg md:text-xl mb-3 md:mb-4">Opening a Restaurant, Cloud Kitchen, or Food Factory?</h4>
+              <p className="text-xs md:text-sm text-brand-paper/80 mb-5 md:mb-6 max-w-2xl mx-auto">
                 Food authorities strictly inspect food preparation zones, water filtration systems, waste management, and staff hygiene before issuing licenses. Speak with our legal consultants to ensure your premises pass inspection on the first visit.
               </p>
               <a
@@ -85,52 +85,55 @@ export default function FoodLicense() {
               </a>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mb-6 md:mb-12">
               <div>
-                <h3 className="font-serif text-2xl text-brand-navy mb-6">Authorities We Work With</h3>
-                <ul className="space-y-3 text-sm text-brand-navy/80">
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Punjab Food Authority (PFA)</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Sindh Food Authority (SFA)</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> KP Food Safety & Halal Food Authority (KP-FS&HFA)</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> ICT Food Safety Authority (Islamabad)</li>
+                <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Authorities We Work With</h3>
+                <ul className="space-y-2.5 text-xs md:text-sm text-brand-navy/80">
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Punjab Food Authority (PFA)</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Sindh Food Authority (SFA)</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>KP Food Safety & Halal Food Authority (KP-FS&HFA)</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>ICT Food Safety Authority (Islamabad)</span></li>
                 </ul>
               </div>
 
               <div>
-                <h3 className="font-serif text-2xl text-brand-navy mb-6">Our Service Scope</h3>
-                <ul className="space-y-3 text-sm text-brand-navy/80">
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <strong>Authority Portal Registration:</strong> Drafting applications and filing digital submissions.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <strong>Pre-Inspection Audit:</strong> Conducting preliminary compliance audits for kitchen layouts, etc.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <strong>Staff Medical Clearances:</strong> Guiding management on obtaining mandatory medical fitness certificates.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <strong>Inspection Support:</strong> Coordinating with official food safety officers during inspections.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <strong>License Delivery & Renewals:</strong> Final license handover, display compliance guidance, and renewals.</li>
+                <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Our Service Scope</h3>
+                <ul className="space-y-2.5 text-xs md:text-sm text-brand-navy/80">
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span><strong>Authority Portal Registration:</strong> Drafting applications and filing digital submissions.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span><strong>Pre-Inspection Audit:</strong> Conducting preliminary compliance audits for kitchen layouts, etc.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span><strong>Staff Medical Clearances:</strong> Guiding management on obtaining mandatory medical fitness certificates.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span><strong>Inspection Support:</strong> Coordinating with official food safety officers during inspections.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span><strong>License Delivery & Renewals:</strong> Final license handover, display compliance guidance, and renewals.</span></li>
                 </ul>
               </div>
             </div>
 
-            <h3 className="font-serif text-2xl text-brand-navy mb-6">Target Business Types</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Hospitality & Retail
+            <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Target Business Types</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Hospitality & Retail</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   Restaurants, Cafes, Fast Food Outlets, Bakeries, Cloud Kitchens, Ice Cream Parlors, and Dhabas.
                 </p>
               </div>
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Manufacturing & Industrial
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Manufacturing & Industrial</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   Food Processing Plants, Beverage Factories, Flour/Rice Mills, Packaging Units, and Edible Oil Refineries.
                 </p>
               </div>
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Supply Chain & Services
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Supply Chain & Services</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   Food Importers, Exporters, Cold Storage Warehouses, Wholesale Distributors, Catering Services, and Educational Institution Canteens.
                 </p>
               </div>

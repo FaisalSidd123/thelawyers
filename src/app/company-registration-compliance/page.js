@@ -91,10 +91,10 @@ export default function CompanyRegistrationCompliance() {
         <Navbar />
 
         {/* Header Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
+        <section className="pt-20 pb-10 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-navy/95 to-brand-burgundy/20 z-0" />
           <div className="max-w-7xl mx-auto relative z-10 text-center">
-            <span className="text-amber-400 font-bold uppercase tracking-widest text-xs md:text-sm mb-4 block">Company Registration & Compliance</span>
+            <span className="text-amber-400 font-bold uppercase tracking-widest text-xs md:text-sm mb-3 block">Company Registration & Compliance</span>
             <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-brand-paper font-normal leading-tight mb-6 max-w-4xl mx-auto">
               End-to-End Business Registration, Tax & Corporate Compliance Services
             </h1>
@@ -105,7 +105,7 @@ export default function CompanyRegistrationCompliance() {
         </section>
 
         {/* Services Grid Section */}
-        <section className="py-20 px-4 md:px-12 bg-brand-cream/40">
+        <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-cream/40">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
               {services.map((service, index) => (
@@ -149,7 +149,7 @@ export default function CompanyRegistrationCompliance() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 px-4 md:px-12 bg-brand-navy text-brand-paper text-center">
+        <section className="py-10 md:py-20 px-4 md:px-12 bg-brand-navy text-brand-paper text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-serif text-3xl md:text-4xl mb-6">Need expert guidance for your business?</h2>
             <p className="text-sm text-brand-paper/70 mb-8">

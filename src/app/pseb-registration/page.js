@@ -15,7 +15,7 @@ export default function PsebRegistration() {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
+        <section className="pt-20 pb-10 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-navy/95 to-brand-burgundy/20 z-0" />
           <div className="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 text-left">
@@ -61,18 +61,18 @@ export default function PsebRegistration() {
         </section>
 
         {/* Detailed Overview */}
-        <section className="py-20 px-4 md:px-12 bg-brand-paper">
+        <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-paper">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl text-brand-navy mb-6">Overview</h2>
-            <p className="text-brand-navy/80 leading-relaxed mb-12">
+            <h2 className="font-serif text-2xl md:text-3xl text-brand-navy mb-4 md:mb-6">Overview</h2>
+            <p className="text-sm md:text-base text-brand-navy/80 leading-relaxed mb-8 md:mb-12">
               Registering your IT company, software house, BPO center, or freelance profile with PSEB provides official state recognition as an accredited IT exporter. This opens access to crucial FBR tax credits on foreign IT earnings, foreign currency account retention, commercial call center IP whitelisting, discounted international trade shows, and preferred participation in government tech initiatives.
               <br/><br/>
               At The Lawyers, we handle the complete PSEB portal setup, corporate filing, call center licensing, and annual renewal compliance so software teams and tech professionals can scale seamlessly.
             </p>
 
-            <div className="bg-brand-navy text-brand-paper p-8 rounded-md mb-12 text-center">
-              <h4 className="font-serif text-xl mb-4">Exporting Software or Digital Services Overseas?</h4>
-              <p className="text-sm text-brand-paper/80 mb-6 max-w-2xl mx-auto">
+            <div className="bg-brand-navy text-brand-paper p-6 md:p-8 rounded-md mb-8 md:mb-12 text-center">
+              <h4 className="font-serif text-lg md:text-xl mb-3 md:mb-4">Exporting Software or Digital Services Overseas?</h4>
+              <p className="text-xs md:text-sm text-brand-paper/80 mb-5 md:mb-6 max-w-2xl mx-auto">
                 Unregistered IT revenue brought into Pakistan via traditional banking channels may be subjected to unnecessary withholding taxes or delays. Speak with our legal consultants to secure your official PSEB export status.
               </p>
               <a
@@ -85,44 +85,48 @@ export default function PsebRegistration() {
               </a>
             </div>
 
-            <h3 className="font-serif text-2xl text-brand-navy mb-6">Who Benefits From PSEB Registration?</h3>
-            <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-brand-navy/80 mb-12">
-              <li className="flex items-start gap-2 bg-brand-cream/40 p-4 rounded-md border border-brand-light-gray"><CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 shrink-0" /> Software Development Agencies & IT Consultancy Services.</li>
-              <li className="flex items-start gap-2 bg-brand-cream/40 p-4 rounded-md border border-brand-light-gray"><CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 shrink-0" /> Call Centers and BPO (Business Process Outsourcing) Providers.</li>
-              <li className="flex items-start gap-2 bg-brand-cream/40 p-4 rounded-md border border-brand-light-gray"><CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 shrink-0" /> Independent Freelancers and Digital Agencies.</li>
+            <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Who Benefits From PSEB Registration?</h3>
+            <ul className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 text-xs md:text-sm text-brand-navy/80 mb-8 md:mb-12">
+              <li className="flex items-start gap-2.5 bg-brand-cream/40 p-4 rounded-md border border-brand-light-gray"><CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 shrink-0" /> <span>Software Development Agencies & IT Consultancy Services.</span></li>
+              <li className="flex items-start gap-2.5 bg-brand-cream/40 p-4 rounded-md border border-brand-light-gray"><CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 shrink-0" /> <span>Call Centers and BPO (Business Process Outsourcing) Providers.</span></li>
+              <li className="flex items-start gap-2.5 bg-brand-cream/40 p-4 rounded-md border border-brand-light-gray"><CheckCircle2 className="w-5 h-5 text-emerald-600 mt-0.5 shrink-0" /> <span>Independent Freelancers and Digital Agencies.</span></li>
             </ul>
 
-            <h3 className="font-serif text-2xl text-brand-navy mb-6">Key Incentives Secured</h3>
-            <div className="space-y-4 mb-12">
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> 100% FBR Income Tax Credit
+            <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Key Incentives Secured</h3>
+            <div className="space-y-3 md:space-y-4 mb-8 md:mb-12">
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>100% FBR Income Tax Credit</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   Full eligibility to claim tax credits/exemptions on foreign IT export earnings under Section 65F of the Income Tax Ordinance, 2001.
                 </p>
               </div>
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Specialized Foreign Currency (FCY) Accounts
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Specialized Foreign Currency (FCY) Accounts</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   Facilitation under State Bank of Pakistan (SBP) rules to retain up to 50% of foreign currency export earnings in specialized business bank accounts for overseas software purchases, marketing, and expansion.
                 </p>
               </div>
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Call Center Whitelisting
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Call Center Whitelisting</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   Regulatory clearance for static IP address whitelisting via PTA and telecom operators for legal VoIP/SIP traffic routing.
                 </p>
               </div>
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> International Directory Listing & Tech Events
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>International Directory Listing & Tech Events</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   Official corporate listing in PSEB’s public IT Exporters Directory, boosting trust with foreign enterprise clients. Priority access and subsidized booths at major global tech expos (e.g., GITEX, Web Summit) and subsidized CMMI/ISO certification programs.
                 </p>
               </div>

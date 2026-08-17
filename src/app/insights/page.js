@@ -12,24 +12,17 @@ import Footer from '@/components/Footer';
 
 export default function InsightsPage() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('All');
-
-  const categories = ['All', 'Intellectual Property', 'Others'];
 
   const filteredArticles = articles.filter((art) => {
-    const matchesSearch = art.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                          art.summary.toLowerCase().includes(searchTerm.toLowerCase());
-    
-    let matchesCategory = false;
-    if (selectedCategory === 'All') {
-      matchesCategory = true;
-    } else if (selectedCategory === 'Intellectual Property') {
-      matchesCategory = art.category === 'Intellectual Property';
-    } else if (selectedCategory === 'Others') {
-      matchesCategory = art.category !== 'Intellectual Property';
-    }
-
-    return matchesSearch && matchesCategory;
+    const query = searchTerm.trim().toLowerCase();
+    if (!query) return true;
+    return (
+      (art.title && art.title.toLowerCase().includes(query)) ||
+      (art.subtitle && art.subtitle.toLowerCase().includes(query)) ||
+      (art.summary && art.summary.toLowerCase().includes(query)) ||
+      (art.content && art.content.toLowerCase().includes(query)) ||
+      (art.author && art.author.toLowerCase().includes(query))
+    );
   });
 
   return (
@@ -39,7 +32,7 @@ export default function InsightsPage() {
         <Navbar />
 
         {/* Banner Section */}
-        <section className="relative pt-16 pb-16 md:pt-24 md:pb-20 bg-gradient-to-b from-brand-paper via-brand-cream/30 to-brand-paper border-b border-brand-light-gray/60">
+        <section className="relative pt-20 pb-6 md:pt-28 md:pb-10 bg-gradient-to-b from-brand-paper via-brand-cream/30 to-brand-paper border-b border-brand-light-gray/60">
           <div className="max-w-7xl mx-auto px-4 md:px-12 text-center">
             
             <span className="text-xs font-bold text-brand-burgundy uppercase tracking-widest">
@@ -50,12 +43,12 @@ export default function InsightsPage() {
               Legal Insights & Comprehensive Guides
             </h1>
 
-            <p className="text-sm sm:text-base text-brand-navy/75 max-w-2xl mx-auto leading-relaxed mb-8">
+            <p className="text-sm sm:text-base text-brand-navy/75 max-w-2xl mx-auto leading-relaxed mb-6">
               Authoritative guides on trademark registration, IPO-Pakistan journal monitoring, corporate compliance, and legal defense in Pakistan.
             </p>
 
-            {/* Search & Filter Bar */}
-            <div className="max-w-xl mx-auto flex flex-col sm:flex-row items-center gap-3">
+            {/* Search Bar */}
+            <div className="max-w-xl mx-auto">
               <div className="relative w-full">
                 <Search className="w-4 h-4 text-brand-muted-gray absolute left-3.5 top-1/2 -translate-y-1/2" />
                 <input
@@ -66,30 +59,20 @@ export default function InsightsPage() {
                   className="w-full bg-brand-paper border border-brand-light-gray rounded-sm pl-10 pr-4 py-2.5 text-xs text-brand-navy focus:outline-none focus:border-brand-burgundy shadow-xs"
                 />
               </div>
-
-              <select
-                value={selectedCategory}
-                onChange={(e) => setSelectedCategory(e.target.value)}
-                className="bg-brand-paper border border-brand-light-gray rounded-sm px-4 py-2.5 text-xs text-brand-navy font-medium focus:outline-none focus:border-brand-burgundy cursor-pointer shrink-0 w-full sm:w-auto"
-              >
-                {categories.map((cat, idx) => (
-                  <option key={idx} value={cat}>{cat}</option>
-                ))}
-              </select>
             </div>
 
           </div>
         </section>
 
         {/* Articles Grid Section */}
-        <section className="py-16 px-4 md:px-12 bg-brand-paper">
+        <section className="pt-6 pb-16 px-4 md:px-12 bg-brand-paper">
           <div className="max-w-7xl mx-auto">
             
             {filteredArticles.length === 0 ? (
               <div className="text-center py-16 bg-brand-cream/20 border border-brand-light-gray rounded-sm max-w-md mx-auto">
                 <BookOpen className="w-8 h-8 text-brand-burgundy mx-auto mb-2 opacity-60" />
                 <h3 className="font-serif text-lg text-brand-navy font-medium">No Articles Found</h3>
-                <p className="text-xs text-brand-muted-gray mt-1">Try adjusting your search terms or category filter.</p>
+                <p className="text-xs text-brand-muted-gray mt-1">Try adjusting your search terms.</p>
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -102,9 +85,6 @@ export default function InsightsPage() {
                   >
                     <div>
                       <div className="flex items-center justify-between text-[11px] text-brand-muted-gray mb-3">
-                        <span className="px-2.5 py-0.5 rounded-full bg-brand-burgundy/10 text-brand-burgundy font-semibold">
-                          {article.category}
-                        </span>
                         <span className="flex items-center gap-1">
                           <Clock className="w-3 h-3" />
                           {article.readTime}

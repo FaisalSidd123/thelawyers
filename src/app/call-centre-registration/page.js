@@ -15,7 +15,7 @@ export default function CallCentreRegistration() {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
+        <section className="pt-20 pb-10 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-navy/95 to-brand-burgundy/20 z-0" />
           <div className="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 text-left">
@@ -61,10 +61,10 @@ export default function CallCentreRegistration() {
         </section>
 
         {/* Detailed Overview */}
-        <section className="py-20 px-4 md:px-12 bg-brand-paper">
+        <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-paper">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl text-brand-navy mb-6">Overview</h2>
-            <p className="text-brand-navy/80 leading-relaxed mb-12">
+            <h2 className="font-serif text-2xl md:text-3xl text-brand-navy mb-4 md:mb-6">Overview</h2>
+            <p className="text-sm md:text-base text-brand-navy/80 leading-relaxed mb-8 md:mb-12">
               Operating an international or domestic call center in Pakistan without official clearance from the Pakistan Software Export Board (PSEB) and the Pakistan Telecommunication Authority (PTA) is an illegal act under telecommunication laws.
               <br/><br/>
               Unregistered Voice over IP (VoIP) operations and non-whitelisted IP routing trigger immediate automated network blocks, ISP bandwidth cutoffs, abrupt premises raids, heavy regulatory fines, and legal prosecution for unauthorized call termination.
@@ -72,9 +72,9 @@ export default function CallCentreRegistration() {
               At The Lawyers, we handle the complete end-to-end legal and technical workflow—from SECP company incorporation and PSEB Call Center Portal registration to PTA static IP whitelisting and foreign currency account compliance. Whether you operate a 5-seat outbound agency or a multi-location enterprise BPO, we ensure your telecommunication channels remain 100% compliant, secure, and uninterrupted.
             </p>
 
-            <div className="bg-brand-navy text-brand-paper p-8 rounded-md mb-12 text-center">
-              <h4 className="font-serif text-xl mb-4">Planning to Launch an Inbound/Outbound Call Center or BPO?</h4>
-              <p className="text-sm text-brand-paper/80 mb-6 max-w-2xl mx-auto">
+            <div className="bg-brand-navy text-brand-paper p-6 md:p-8 rounded-md mb-8 md:mb-12 text-center">
+              <h4 className="font-serif text-lg md:text-xl mb-3 md:mb-4">Planning to Launch an Inbound/Outbound Call Center or BPO?</h4>
+              <p className="text-xs md:text-sm text-brand-paper/80 mb-5 md:mb-6 max-w-2xl mx-auto">
                 Bypassing PTA IP whitelisting or using non-reported VoIP lines risks immediate internet termination by your ISP. Speak with our legal consultants before deploying your network infrastructure.
               </p>
               <a
@@ -87,28 +87,28 @@ export default function CallCentreRegistration() {
               </a>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mb-6 md:mb-12">
               <div>
-                <h3 className="font-serif text-2xl text-brand-navy mb-6">Our Comprehensive Legal Workflow</h3>
-                <ul className="space-y-3 text-sm text-brand-navy/80">
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Verification of business entity structure (Company or Partnership).</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Drafting and submitting Call Center Registration applications on the PSEB portal.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Facilitating PTA coordination for legal Voice over IP (VoIP) and Bandwidth allocation.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Securing Whitelisted IP Approvals to ensure uninterrupted, legal call routing.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Annual Call Center License Renewals and capacity expansion filings.</li>
+                <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Our Comprehensive Legal Workflow</h3>
+                <ul className="space-y-2.5 text-xs md:text-sm text-brand-navy/80">
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Verification of business entity structure (Company or Partnership).</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Drafting and submitting Call Center Registration applications on the PSEB portal.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Facilitating PTA coordination for legal Voice over IP (VoIP) and Bandwidth allocation.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Securing Whitelisted IP Approvals to ensure uninterrupted, legal call routing.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Annual Call Center License Renewals and capacity expansion filings.</span></li>
                 </ul>
               </div>
 
               <div>
-                <h3 className="font-serif text-2xl text-brand-navy mb-6">Documents Required</h3>
-                <p className="text-sm text-brand-navy/70 mb-4">
+                <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Documents Required</h3>
+                <p className="text-xs md:text-sm text-brand-navy/70 mb-4">
                   Requirements vary based on your registration tier (Freelancer vs. IT Company vs. Call Center). Contact Us for exact requirements. Generally, you need:
                 </p>
-                <ul className="space-y-3 text-sm text-brand-navy/80">
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> Company Registration Certificate (SECP) or Partnership Deed.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> NTN & STRN Certificates.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> ISP Bandwidth Agreement and static IP details.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> Director/Proprietor CNIC copies and lease agreement of operational premises.</li>
+                <ul className="space-y-2.5 text-xs md:text-sm text-brand-navy/80">
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span>Company Registration Certificate (SECP) or Partnership Deed.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span>NTN & STRN Certificates.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span>ISP Bandwidth Agreement and static IP details.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span>Director/Proprietor CNIC copies and lease agreement of operational premises.</span></li>
                 </ul>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function CallCentreRegistration() {
         </section>
 
         {/* FAQs */}
-        <section className="py-20 px-4 md:px-12 bg-brand-cream/40">
+        <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-cream/40">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-serif text-3xl text-brand-navy mb-10">Frequently Asked Questions</h2>
             <div className="space-y-6">

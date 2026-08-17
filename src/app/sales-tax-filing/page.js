@@ -15,7 +15,7 @@ export default function SalesTaxFiling() {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
+        <section className="pt-20 pb-10 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-navy/95 to-brand-burgundy/20 z-0" />
           <div className="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 text-left">
@@ -61,16 +61,16 @@ export default function SalesTaxFiling() {
         </section>
 
         {/* Detailed Overview */}
-        <section className="py-20 px-4 md:px-12 bg-brand-paper">
+        <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-paper">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl text-brand-navy mb-6">Overview</h2>
-            <p className="text-brand-navy/80 leading-relaxed mb-12">
+            <h2 className="font-serif text-2xl md:text-3xl text-brand-navy mb-4 md:mb-6">Overview</h2>
+            <p className="text-sm md:text-base text-brand-navy/80 leading-relaxed mb-8 md:mb-12">
               Sales tax compliance is an ongoing, monthly obligation. Registered businesses must submit monthly sales tax returns detailing their sales (output tax) and business purchases (input tax). Missing deadlines or submitting inaccurate returns leads to immediate blocking of sales tax profiles, automatic inclusion on non-active tax lists, and severe financial penalties. The Lawyers manages your complete monthly sales tax cycle with total accuracy.
             </p>
 
-            <div className="bg-brand-navy text-brand-paper p-8 rounded-md mb-12 text-center">
-              <h4 className="font-serif text-xl mb-4">Facing Deadline Pressure or Annexure Discrepancies?</h4>
-              <p className="text-sm text-brand-paper/80 mb-6 max-w-2xl mx-auto">
+            <div className="bg-brand-navy text-brand-paper p-6 md:p-8 rounded-md mb-8 md:mb-12 text-center">
+              <h4 className="font-serif text-lg md:text-xl mb-3 md:mb-4">Facing Deadline Pressure or Annexure Discrepancies?</h4>
+              <p className="text-xs md:text-sm text-brand-paper/80 mb-5 md:mb-6 max-w-2xl mx-auto">
                 Unclaimed input tax or mismatched supplier invoices can cost your business thousands. Let our corporate tax experts reconcile your ledgers before filing.
               </p>
               <a
@@ -83,48 +83,51 @@ export default function SalesTaxFiling() {
               </a>
             </div>
 
-            <h3 className="font-serif text-2xl text-brand-navy mb-6">Who Requires This Service?</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Goods Entities (FBR)
+            <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Who Requires This Service?</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Goods Entities (FBR)</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   Manufacturers, Wholesalers, Distributors, Importers, Exporters, and Commercial Retailers.
                 </p>
               </div>
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Service Entities (Provincial)
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Service Entities (Provincial)</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   IT Software & Services firms, Construction & Engineering contractors, Advertising agencies, Restaurants, Logistics companies, and Legal/Financial consultants registered with PRA, SRB, KPRA, BRA, or ICT.
                 </p>
               </div>
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Corporate Withholding Agents
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Corporate Withholding Agents</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   Companies designated as withholding agents required to deduct sales tax at source under applicable rules.
                 </p>
               </div>
             </div>
 
-            <h3 className="font-serif text-2xl text-brand-navy mb-6">Our Monthly Management Scope</h3>
-            <ul className="space-y-3 text-sm text-brand-navy/80 mb-12">
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Compilation and verification of sales invoices (Annexure C) and purchase invoices (Annexure A).</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Reconciliation of input tax adjustments to maximize cash flow savings legally.</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Electronic submission of monthly returns on FBR IRIS and Provincial Portals (PRA, SRB, KPRA).</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Generation of CPR (Computerized Payment Receipts) for tax payment liabilities.</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Handling sales tax withholding returns (Annexure I) and sales tax audit notices.</li>
+            <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Our Monthly Management Scope</h3>
+            <ul className="space-y-2.5 text-xs md:text-sm text-brand-navy/80 mb-8 md:mb-12">
+              <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Compilation and verification of sales invoices (Annexure C) and purchase invoices (Annexure A).</span></li>
+              <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Reconciliation of input tax adjustments to maximize cash flow savings legally.</span></li>
+              <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Electronic submission of monthly returns on FBR IRIS and Provincial Portals (PRA, SRB, KPRA).</span></li>
+              <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Generation of CPR (Computerized Payment Receipts) for tax payment liabilities.</span></li>
+              <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Handling sales tax withholding returns (Annexure I) and sales tax audit notices.</span></li>
             </ul>
 
           </div>
         </section>
 
         {/* FAQs */}
-        <section className="py-20 px-4 md:px-12 bg-brand-cream/40">
+        <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-cream/40">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-serif text-3xl text-brand-navy mb-10">Frequently Asked Questions</h2>
             <div className="space-y-6">

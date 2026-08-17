@@ -15,11 +15,11 @@ export default function CompanyRegistration() {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
+        <section className="pt-20 pb-10 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-navy/95 to-brand-burgundy/20 z-0" />
           <div className="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 text-left">
-              <span className="text-amber-400 font-bold uppercase tracking-widest text-xs md:text-sm mb-4 block">Company Registration & Compliance</span>
+              <span className="text-amber-400 font-bold uppercase tracking-widest text-xs md:text-sm mb-3 block">Company Registration & Compliance</span>
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-brand-paper font-normal leading-tight mb-6">
                 Professional SECP Company Registration Services in Pakistan
               </h1>
@@ -61,52 +61,56 @@ export default function CompanyRegistration() {
         </section>
 
         {/* Detailed Overview */}
-        <section className="py-20 px-4 md:px-12 bg-brand-paper">
+        <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-paper">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl text-brand-navy mb-6">Overview</h2>
-            <p className="text-brand-navy/80 leading-relaxed mb-12">
+            <h2 className="font-serif text-2xl md:text-3xl text-brand-navy mb-4 md:mb-6">Overview</h2>
+            <p className="text-sm md:text-base text-brand-navy/80 leading-relaxed mb-6 md:mb-10">
               Forming a legal corporate entity is the single most critical step in establishing a scalable business in Pakistan. Whether you are an IT startup, a manufacturing firm, or an individual consultant, registering your company provides corporate status, limited liability protection, and access to corporate banking, government tenders, and global trade. At The Lawyers, we handle the entire process digitally, eliminating bureaucracy so you can focus on growing your core business.
             </p>
 
-            <h3 className="font-serif text-2xl text-brand-navy mb-6">Entity Types We Register</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Private Limited Company (Pvt Ltd)
+            <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Entity Types We Register</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-10">
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Private Limited Company (Pvt Ltd)</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   Designed for businesses with two or more directors/shareholders. It offers limited liability protection, enhanced corporate credibility, and the ability to raise equity capital from investors.
                 </p>
               </div>
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Single Member Company (SMC-Pvt Ltd)
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Single Member Company (SMC-Pvt Ltd)</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   Offers all the benefits and corporate status of a Private Limited company for single owner, maintaining total ownership while enjoying limited liability protection.
                 </p>
               </div>
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Partnership / Association of Persons
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Partnership / Association of Persons</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   Choose between a traditional Registrar of Firms partnership (AOP) or SECP's modern Limited Liability Partnership (LLP), which combines partner operational flexibility with corporate asset protection.
                 </p>
               </div>
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Sole Proprietorship
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Sole Proprietorship</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   A streamlined, fast setup for individual business owners, freelancers, and local vendors seeking an official business name linked to their personal NTN.
                 </p>
               </div>
             </div>
 
-            <div className="bg-brand-navy text-brand-paper p-8 rounded-md mb-12 text-center">
-              <h4 className="font-serif text-xl mb-4">Not sure which entity is right for your business?</h4>
-              <p className="text-sm text-brand-paper/80 mb-6 max-w-2xl mx-auto">
+            <div className="bg-brand-navy text-brand-paper p-6 md:p-8 rounded-md mb-6 md:mb-10 text-center">
+              <h4 className="font-serif text-lg md:text-xl mb-3 md:mb-4">Not sure which entity is right for your business?</h4>
+              <p className="text-xs md:text-sm text-brand-paper/80 mb-5 md:mb-6 max-w-2xl mx-auto">
                 Choosing between an SMC, Pvt Ltd, LLP, AOP or Sole proprietorship depends on your business goals, tax strategy, and growth plans. Contact us — our corporate team will evaluate your business model and guide you completely for free!
               </p>
               <a
@@ -119,29 +123,29 @@ export default function CompanyRegistration() {
               </a>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
               <div>
-                <h3 className="font-serif text-2xl text-brand-navy mb-6">Documents Required</h3>
-                <p className="text-sm text-brand-navy/70 mb-4">
+                <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Documents Required</h3>
+                <p className="text-xs md:text-sm text-brand-navy/70 mb-4">
                   Documents vary based on your desired entity type. Here are the basic requirements to get started:
                 </p>
-                <ul className="space-y-3 text-sm text-brand-navy/80">
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Front and back pictures of CNIC / NICOP / Passport.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Proposed business name.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Office or house address.</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Mobile number and email address.</li>
+                <ul className="space-y-2.5 text-xs md:text-sm text-brand-navy/80">
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Front and back pictures of CNIC / NICOP / Passport.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Proposed business name.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Office or house address.</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Mobile number and email address.</span></li>
                 </ul>
               </div>
 
               <div>
-                <h3 className="font-serif text-2xl text-brand-navy mb-6">Our Service Package Includes</h3>
-                <ul className="space-y-3 text-sm text-brand-navy/80">
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> Preparation and filing of incorporation documents</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> Assistance in obtaining Certificate of Incorporation</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> Drafting of Memorandum & Articles of Association</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> Filing of required registration forms</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> Assistance in NTN registration process</li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> Post-incorporation documentation guidance</li>
+                <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Our Service Package Includes</h3>
+                <ul className="space-y-2.5 text-xs md:text-sm text-brand-navy/80">
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span>Preparation and filing of incorporation documents</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span>Assistance in obtaining Certificate of Incorporation</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span>Drafting of Memorandum & Articles of Association</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span>Filing of required registration forms</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span>Assistance in NTN registration process</span></li>
+                  <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span>Post-incorporation documentation guidance</span></li>
                 </ul>
               </div>
             </div>
@@ -149,23 +153,23 @@ export default function CompanyRegistration() {
         </section>
 
         {/* Process Section */}
-        <section className="py-20 px-4 md:px-12 bg-brand-cream/40">
+        <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-cream/40">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl text-brand-navy mb-12 text-center">Step-by-Step Registration Process</h2>
-            <div className="space-y-8">
+            <h2 className="font-serif text-2xl md:text-3xl text-brand-navy mb-5 md:mb-10 text-center">Step-by-Step Registration Process</h2>
+            <div className="space-y-3 md:space-y-6">
               {[
                 { step: '1', title: 'Initial Strategy & Name Search', desc: 'You provide proposed name; we verify eligibility against SECP databases.' },
                 { step: '2', title: 'Document Preparation', desc: 'We draft custom MOA/AOA agreements and prepare founder declaration forms.' },
                 { step: '3', title: 'E-Filing & Fee Deposit', desc: 'Submission of digital applications to SECP alongside official state fee processing.' },
                 { step: '4', title: 'Incorporation & NTN Handover', desc: 'Delivery of physical/digital Certificate of Incorporation, MoA, AoA, Form 1, NTN, NTN Inquiry, 181 Order etc.' },
               ].map((item) => (
-                <div key={item.step} className="flex items-start gap-6 bg-brand-paper p-6 rounded-md shadow-sm border border-brand-light-gray">
-                  <div className="w-12 h-12 bg-brand-navy text-brand-paper rounded-full flex items-center justify-center font-bold text-xl shrink-0">
+                <div key={item.step} className="flex items-start gap-4 md:gap-6 bg-brand-paper p-4 md:p-6 rounded-md shadow-sm border border-brand-light-gray">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-brand-navy text-brand-paper rounded-full flex items-center justify-center font-bold text-lg md:text-xl shrink-0">
                     {item.step}
                   </div>
                   <div>
-                    <h4 className="font-semibold text-brand-navy mb-2">{item.title}</h4>
-                    <p className="text-sm text-brand-navy/70 leading-relaxed">{item.desc}</p>
+                    <h4 className="font-semibold text-brand-navy text-sm md:text-base mb-1 md:mb-2">{item.title}</h4>
+                    <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -174,9 +178,9 @@ export default function CompanyRegistration() {
         </section>
 
         {/* FAQs */}
-        <section className="py-20 px-4 md:px-12 bg-brand-paper">
+        <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-paper">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl text-brand-navy mb-10">Frequently Asked Questions</h2>
+            <h2 className="font-serif text-2xl md:text-3xl text-brand-navy mb-6 md:mb-10">Frequently Asked Questions</h2>
             <div className="space-y-6">
               {[
                 { q: 'How long does SECP company incorporation take?', a: 'Typically, name availability takes 24–48 hours, and final incorporation takes 3 to 5 working days after complete document submission.' },

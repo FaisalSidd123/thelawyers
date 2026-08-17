@@ -15,7 +15,7 @@ export default function ChamberOfCommerceRegistration() {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="pt-32 pb-16 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
+        <section className="pt-20 pb-10 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-navy/95 to-brand-burgundy/20 z-0" />
           <div className="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 text-left">
@@ -61,18 +61,18 @@ export default function ChamberOfCommerceRegistration() {
         </section>
 
         {/* Detailed Overview */}
-        <section className="py-20 px-4 md:px-12 bg-brand-paper">
+        <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-paper">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl text-brand-navy mb-6">Overview</h2>
-            <p className="text-brand-navy/80 leading-relaxed mb-12">
+            <h2 className="font-serif text-2xl md:text-3xl text-brand-navy mb-4 md:mb-6">Overview</h2>
+            <p className="text-sm md:text-base text-brand-navy/80 leading-relaxed mb-8 md:mb-12">
               Membership in a recognized Chamber of Commerce and Industry is a major milestone for any operating business in Pakistan. A Chamber membership validates your commercial standing, unlocks access to international trade delegations, provides essential recommendation letters for foreign business visas, and is a mandatory legal prerequisite for import/export licensing, government tender participation, and specialized corporate operations.
               <br/><br/>
               Whether you run a sole proprietorship in Lahore, an expanding partnership in Karachi, or a corporation in Islamabad, The Lawyers streamlines your entire Chamber enrollment process—from document preparation and proposer/seconder endorsement to certificate issuance.
             </p>
 
-            <div className="bg-brand-navy text-brand-paper p-8 rounded-md mb-12 text-center">
-              <h4 className="font-serif text-xl mb-4">Planning International Business Travel or Applying for Import/Export Licenses?</h4>
-              <p className="text-sm text-brand-paper/80 mb-6 max-w-2xl mx-auto">
+            <div className="bg-brand-navy text-brand-paper p-6 md:p-8 rounded-md mb-8 md:mb-12 text-center">
+              <h4 className="font-serif text-lg md:text-xl mb-3 md:mb-4">Planning International Business Travel or Applying for Import/Export Licenses?</h4>
+              <p className="text-xs md:text-sm text-brand-paper/80 mb-5 md:mb-6 max-w-2xl mx-auto">
                 Embassies and government bodies heavily prioritize businesses backed by an active Chamber Membership Certificate. Consult our corporate team to fast-track your enrollment.
               </p>
               <a
@@ -85,47 +85,49 @@ export default function ChamberOfCommerceRegistration() {
               </a>
             </div>
 
-            <h3 className="font-serif text-2xl text-brand-navy mb-6">Chambers We Process Memberships For</h3>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-brand-navy/80 mb-12">
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Lahore Chamber of Commerce & Industry (LCCI)</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Karachi Chamber of Commerce & Industry (KCCI)</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Islamabad Chamber of Commerce & Industry (ICCI)</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> Rawalpindi, Faisalabad, Sialkot, and other regional Chambers across Pakistan.</li>
+            <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Chambers We Process Memberships For</h3>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 text-xs md:text-sm text-brand-navy/80 mb-8 md:mb-12">
+              <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Lahore Chamber of Commerce & Industry (LCCI)</span></li>
+              <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Karachi Chamber of Commerce & Industry (KCCI)</span></li>
+              <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Islamabad Chamber of Commerce & Industry (ICCI)</span></li>
+              <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" /> <span>Rawalpindi, Faisalabad, Sialkot, and other regional Chambers across Pakistan.</span></li>
             </ul>
 
-            <h3 className="font-serif text-2xl text-brand-navy mb-6">Membership Classes Available</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Corporate Class Membership
+            <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Membership Classes Available</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-12">
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Corporate Class Membership</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed mb-4">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed mb-3 md:mb-4">
                   <strong>Target Audience:</strong> SECP-registered Private Limited companies, Public Limited entities, Multi-nationals, and large Partnership firms (AOPs) meeting prescribed turnover or capital thresholds.
                 </p>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   <strong>Key Privileges:</strong> Full voting rights in Chamber elections, priority executive delegation seats, and top-tier visa recommendation credentials.
                 </p>
               </div>
-              <div className="bg-brand-cream/40 p-6 rounded-md border border-brand-light-gray">
-                <h4 className="font-semibold text-brand-navy mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy" /> Associate Class Membership
+              <div className="bg-brand-cream/40 p-5 md:p-6 rounded-md border border-brand-light-gray">
+                <h4 className="font-semibold text-brand-navy mb-2 flex items-start gap-2.5">
+                  <CheckCircle2 className="w-5 h-5 text-brand-burgundy mt-0.5 shrink-0" />
+                  <span>Associate Class Membership</span>
                 </h4>
-                <p className="text-sm text-brand-navy/70 leading-relaxed mb-4">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed mb-3 md:mb-4">
                   <strong>Target Audience:</strong> Sole Proprietorships, small Partnership firms, and emerging small-and-medium enterprises (SMEs).
                 </p>
-                <p className="text-sm text-brand-navy/70 leading-relaxed">
+                <p className="text-xs md:text-sm text-brand-navy/70 leading-relaxed">
                   <strong>Key Privileges:</strong> Access to trade directories, official Chamber verification, networking forums, and standard visa recommendation support.
                 </p>
               </div>
             </div>
 
-            <h3 className="font-serif text-2xl text-brand-navy mb-6">Key Benefits of Chamber Membership</h3>
-            <ul className="space-y-3 text-sm text-brand-navy/80 mb-12">
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <strong>Official Business Credibility:</strong> Instantly raises your profile with banks, foreign buyers, and domestic corporate clients.</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <strong>Visa Recommendation Letters:</strong> Essential for securing business visas to Europe, USA, UK, China, Turkey, UAE, and Asian trade hubs.</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <strong>Import / Export Operations:</strong> Prerequisite for registering with WeBOC (Web Based One Customs) and obtaining international trade authorizations.</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <strong>Government Tenders & Bidding:</strong> Mandatory requirement for participating in government, defense, and multinational procurement contracts.</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <strong>Policy Representation & Dispute Resolution:</strong> Access to official arbitration channels and policy advocacy regarding tax and trade issues.</li>
+            <h3 className="font-serif text-xl md:text-2xl text-brand-navy mb-4 md:mb-6">Key Benefits of Chamber Membership</h3>
+            <ul className="space-y-2.5 text-xs md:text-sm text-brand-navy/80 mb-8 md:mb-12">
+              <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span><strong>Official Business Credibility:</strong> Instantly raises your profile with banks, foreign buyers, and domestic corporate clients.</span></li>
+              <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span><strong>Visa Recommendation Letters:</strong> Essential for securing business visas to Europe, USA, UK, China, Turkey, UAE, and Asian trade hubs.</span></li>
+              <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span><strong>Import / Export Operations:</strong> Prerequisite for registering with WeBOC (Web Based One Customs) and obtaining international trade authorizations.</span></li>
+              <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span><strong>Government Tenders & Bidding:</strong> Mandatory requirement for participating in government, defense, and multinational procurement contracts.</span></li>
+              <li className="flex items-start gap-2.5"><CheckCircle2 className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" /> <span><strong>Policy Representation & Dispute Resolution:</strong> Access to official arbitration channels and policy advocacy regarding tax and trade issues.</span></li>
             </ul>
 
             <div className="bg-brand-cream/40 border border-brand-burgundy/30 p-8 rounded-md text-center">
