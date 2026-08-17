@@ -107,7 +107,7 @@ export default function CompanyRegistrationCompliance() {
         {/* Services Grid Section */}
         <section className="py-6 md:py-16 px-4 md:px-12 bg-brand-cream/40">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {services.map((service, index) => (
                 <motion.div
                   key={service.slug}
@@ -117,28 +117,28 @@ export default function CompanyRegistrationCompliance() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="bg-brand-paper border border-brand-light-gray rounded-md overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group"
                 >
-                  <div className="relative w-full h-36 md:h-52 bg-brand-navy/90 p-1 overflow-hidden">
+                  <div className="relative w-full aspect-[4/3] bg-brand-navy overflow-hidden">
                     <Image
                       src={service.image}
                       alt={service.title}
                       fill
-                      className="object-contain group-hover:scale-105 transition-transform duration-500"
+                      className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <div className="p-3 md:p-6 flex flex-col flex-grow">
-                    <h3 className="font-serif text-[13px] sm:text-base md:text-xl font-semibold text-brand-navy mb-2 md:mb-3 line-clamp-2 leading-tight">
+                  <div className="p-5 md:p-6 flex flex-col flex-grow">
+                    <h3 className="font-serif text-base sm:text-lg md:text-xl font-semibold text-brand-navy mb-2 md:mb-3 line-clamp-2 leading-tight">
                       {service.title}
                     </h3>
-                    <p className="text-[10px] sm:text-xs text-brand-navy/70 leading-relaxed mb-4 md:mb-6 line-clamp-3">
+                    <p className="text-xs sm:text-sm text-brand-navy/70 leading-relaxed mb-5 md:mb-6 line-clamp-3">
                       {service.description}
                     </p>
                     <div className="mt-auto">
                       <Link
                         href={`/${service.slug}`}
-                        className="inline-flex items-center gap-1.5 md:gap-2 text-brand-burgundy font-semibold text-[9px] sm:text-[10px] md:text-xs uppercase tracking-wider hover:text-brand-navy transition-colors"
+                        className="inline-flex items-center gap-2 text-brand-burgundy font-semibold text-xs uppercase tracking-wider hover:text-brand-navy transition-colors"
                       >
                         <span>View Details</span>
-                        <ArrowRight className="w-3 h-3 md:w-4 md:h-4 group-hover:translate-x-1 transition-transform" />
+                        <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                       </Link>
                     </div>
                   </div>
