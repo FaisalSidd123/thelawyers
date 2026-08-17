@@ -91,7 +91,7 @@ export default function Home() {
         <Navbar onOpenConsultation={() => setIsModalOpen(true)} />
 
         {/* SECTION 2: HERO SECTION (Above the Fold) with Dynamic Background Slideshow */}
-        <section className="relative pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden min-h-[85vh] flex items-center justify-center">
+        <section className="relative py-8 sm:py-12 md:py-16 overflow-hidden min-h-[calc(100vh-80px)] lg:h-[calc(100vh-90px)] flex items-center justify-center">
 
           {/* Dynamic Cross-Fading Premium Background Carousel */}
           <div className="absolute inset-0 z-0 bg-brand-navy overflow-hidden">
@@ -101,7 +101,7 @@ export default function Home() {
                 initial={false}
                 animate={{
                   opacity: idx === bgIndex ? 1 : 0,
-                  scale: idx === bgIndex ? 1 : 1.06,
+                  scale: idx === bgIndex ? 1 : 1.05,
                 }}
                 transition={{ duration: 1.2, ease: 'easeInOut' }}
                 className="absolute inset-0 w-full h-full pointer-events-none"
@@ -129,7 +129,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-paper/10 border border-brand-paper/20 backdrop-blur-md text-xs font-semibold text-amber-300 mb-6 shadow-lg"
+                className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-paper/10 border border-brand-paper/20 backdrop-blur-md text-[11px] sm:text-xs font-semibold text-amber-300 mb-4 sm:mb-5 shadow-lg"
               >
                 <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
                 <span>Premier Legal & Regulatory Practice in Pakistan</span>
@@ -140,7 +140,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-brand-paper leading-tight tracking-tight mb-6 drop-shadow-md"
+                className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-brand-paper leading-tight tracking-tight mb-4 drop-shadow-md max-w-3xl"
               >
                 Comprehensive Legal & Corporate Solutions Under One Roof
               </motion.h1>
@@ -150,7 +150,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-base sm:text-lg md:text-xl text-brand-paper/90 max-w-3xl leading-relaxed mb-8 drop-shadow-sm font-light"
+                className="text-xs sm:text-sm md:text-base text-brand-paper/90 max-w-2xl leading-relaxed mb-6 drop-shadow-sm font-light"
               >
                 From company registration and tax filing to complex litigation we protect your business, family, and assets with proven legal expertise.
               </motion.p>
@@ -160,11 +160,11 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-10"
+                className="flex flex-col sm:flex-row items-center gap-3.5 w-full sm:w-auto mb-6 sm:mb-8"
               >
                 <a
                   href="#contact"
-                  className="w-full sm:w-auto bg-brand-burgundy hover:bg-red-700 text-brand-paper px-8 py-4 rounded-sm text-sm font-semibold tracking-wider uppercase transition-all duration-300 shadow-xl hover:shadow-2xl flex items-center justify-center gap-2 group cursor-pointer border border-red-500/30"
+                  className="w-full sm:w-auto bg-brand-burgundy hover:bg-red-700 text-brand-paper px-6 py-3.5 rounded-sm text-xs sm:text-sm font-semibold tracking-wider uppercase transition-all duration-300 shadow-xl hover:shadow-2xl flex items-center justify-center gap-2 group cursor-pointer border border-red-500/30"
                 >
                   <span>Get Free Tax & Business Consultation</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -174,7 +174,7 @@ export default function Home() {
                   href="https://wa.me/923366050615?text=Hello%2C%20I%20need%20to%20speak%20to%20a%20litigation%20lawyer%20regarding%20a%20court%20matter."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto bg-brand-paper/15 hover:bg-brand-paper/25 text-brand-paper border border-brand-paper/30 backdrop-blur-md px-8 py-4 rounded-sm text-sm font-semibold tracking-wider uppercase transition-all duration-300 shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full sm:w-auto bg-brand-paper/15 hover:bg-brand-paper/25 text-brand-paper border border-brand-paper/30 backdrop-blur-md px-6 py-3.5 rounded-sm text-xs sm:text-sm font-semibold tracking-wider uppercase transition-all duration-300 shadow-lg flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <Scale className="w-4 h-4 text-amber-400" />
                   <span>Speak to a Litigation Lawyer</span>
@@ -186,41 +186,41 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 pt-6 border-t border-brand-paper/15 w-full"
+                className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-5 pt-4 border-t border-brand-paper/15 w-full"
               >
-                <div className="flex items-center gap-2 text-brand-paper">
-                  <span className="text-lg" role="img" aria-label="Scale">⚖️</span>
-                  <span className="text-xs sm:text-sm font-medium">FBR & SECP Registered Specialists</span>
+                <div className="flex items-center gap-1.5 text-brand-paper">
+                  <span className="text-base" role="img" aria-label="Scale">⚖️</span>
+                  <span className="text-[11px] sm:text-xs font-medium">FBR & SECP Registered Specialists</span>
                 </div>
                 <div className="hidden sm:block text-brand-paper/30">•</div>
-                <div className="flex items-center gap-2 text-brand-paper">
-                  <span className="text-lg" role="img" aria-label="Courthouse">🏛️</span>
-                  <span className="text-xs sm:text-sm font-medium">Superior & Subordinate Court Practice</span>
+                <div className="flex items-center gap-1.5 text-brand-paper">
+                  <span className="text-base" role="img" aria-label="Courthouse">🏛️</span>
+                  <span className="text-[11px] sm:text-xs font-medium">Superior & Subordinate Court Practice</span>
                 </div>
                 <div className="hidden sm:block text-brand-paper/30">•</div>
-                <div className="flex items-center gap-2 text-brand-paper">
-                  <span className="text-lg" role="img" aria-label="Lightning">⚡</span>
-                  <span className="text-xs sm:text-sm font-medium">100% Digital & Hassle-Free Filing</span>
+                <div className="flex items-center gap-1.5 text-brand-paper">
+                  <span className="text-base" role="img" aria-label="Lightning">⚡</span>
+                  <span className="text-[11px] sm:text-xs font-medium">100% Digital & Hassle-Free Filing</span>
                 </div>
               </motion.div>
 
               {/* Slideshow Controls & Indicators */}
-              <div className="mt-8 flex flex-col items-center gap-2">
+              <div className="mt-5 flex flex-col items-center gap-1.5">
                 <div className="flex items-center gap-2">
                   {heroBackgrounds.map((_, idx) => (
                     <button
                       key={idx}
                       onClick={() => setBgIndex(idx)}
                       aria-label={`Go to slide ${idx + 1}`}
-                      className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${bgIndex === idx
-                          ? 'w-8 bg-amber-400'
+                      className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${bgIndex === idx
+                          ? 'w-7 bg-amber-400'
                           : 'w-2 bg-brand-paper/40 hover:bg-brand-paper/70'
                         }`}
                     />
                   ))}
                 </div>
-                <span className="text-[11px] text-amber-200/80 font-medium tracking-wide">
-                  {heroBackgrounds[bgIndex].caption} — <span className="text-brand-paper/60">{heroBackgrounds[bgIndex].sub}</span>
+                <span className="text-[10px] text-brand-paper/70 font-serif italic">
+                  {heroBackgrounds[bgIndex].caption}
                 </span>
               </div>
 
