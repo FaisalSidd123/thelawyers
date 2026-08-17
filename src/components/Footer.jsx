@@ -48,31 +48,31 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5 text-xs text-brand-paper/75">
               <li>
                 <Link href="/company-registration-compliance" className="flex items-center gap-2 hover:text-amber-300 transition-colors group">
-                  <ChevronRight className="w-3.5 h-3.5 text-brand-burgundy shrink-0 group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight className="w-3.5 h-3.5 text-amber-400 shrink-0 group-hover:translate-x-1 transition-transform" />
                   <span>SECP Company Registration</span>
                 </Link>
               </li>
               <li>
                 <Link href="/income-tax-filing" className="flex items-center gap-2 hover:text-amber-300 transition-colors group">
-                  <ChevronRight className="w-3.5 h-3.5 text-brand-burgundy shrink-0 group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight className="w-3.5 h-3.5 text-amber-400 shrink-0 group-hover:translate-x-1 transition-transform" />
                   <span>FBR Income Tax Return Filing</span>
                 </Link>
               </li>
               <li>
                 <Link href="/pseb-registration" className="flex items-center gap-2 hover:text-amber-300 transition-colors group">
-                  <ChevronRight className="w-3.5 h-3.5 text-brand-burgundy shrink-0 group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight className="w-3.5 h-3.5 text-amber-400 shrink-0 group-hover:translate-x-1 transition-transform" />
                   <span>PSEB Registration (IT Exemptions)</span>
                 </Link>
               </li>
               <li>
                 <Link href="/sales-tax-registration" className="flex items-center gap-2 hover:text-amber-300 transition-colors group">
-                  <ChevronRight className="w-3.5 h-3.5 text-brand-burgundy shrink-0 group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight className="w-3.5 h-3.5 text-amber-400 shrink-0 group-hover:translate-x-1 transition-transform" />
                   <span>Sales Tax (STRN) Registration</span>
                 </Link>
               </li>
               <li>
                 <Link href="/pasha-registration" className="flex items-center gap-2 hover:text-amber-300 transition-colors group">
-                  <ChevronRight className="w-3.5 h-3.5 text-brand-burgundy shrink-0 group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight className="w-3.5 h-3.5 text-amber-400 shrink-0 group-hover:translate-x-1 transition-transform" />
                   <span>P@SHA IT Membership</span>
                 </Link>
               </li>
@@ -86,18 +86,18 @@ export default function Footer() {
             </h4>
             <div className="flex flex-col gap-3 text-xs text-brand-paper/75">
               <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" />
+                <MapPin className="w-4 h-4 text-amber-400 mt-0.5 shrink-0" />
                 <span>Corporate & Litigation Offices in Islamabad & Lahore, Pakistan</span>
               </div>
               <div className="flex items-start gap-2.5">
-                <Phone className="w-4 h-4 text-brand-burgundy mt-0.5 shrink-0" />
+                <Phone className="w-4 h-4 text-amber-400 mt-0.5 shrink-0" />
                 <div className="flex flex-col gap-0.5">
                   <a href="tel:+923366050615" className="hover:text-amber-300 transition-colors">+92 336 6050615</a>
                   <a href="tel:+923073685421" className="hover:text-amber-300 transition-colors">+92 307 3685421</a>
                 </div>
               </div>
               <div className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-brand-burgundy shrink-0" />
+                <Mail className="w-4 h-4 text-amber-400 shrink-0" />
                 <a href="mailto:info@thelawyers.pk" className="hover:text-amber-300 transition-colors">info@thelawyers.pk</a>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function Footer() {
           {/* Column 4: Legal Disclaimer */}
           <div className="flex flex-col items-start text-left">
             <h4 className="font-serif text-xs font-bold text-brand-paper uppercase tracking-widest mb-4 border-b border-brand-burgundy/50 pb-1.5 flex items-center gap-1.5">
-              <Shield className="w-3.5 h-3.5 text-brand-burgundy" />
+              <Shield className="w-3.5 h-3.5 text-amber-400" />
               <span>Legal Disclaimer</span>
             </h4>
             <p className="text-[11px] text-brand-paper/65 leading-relaxed bg-brand-paper/5 p-3 rounded-md border border-brand-paper/10">

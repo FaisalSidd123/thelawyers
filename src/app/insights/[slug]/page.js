@@ -163,10 +163,10 @@ export default function ArticleDetailPage({ params }) {
             </div>
 
             {/* Sidebar Sticky Panel */}
-            <div className="lg:col-span-4 space-y-6">
+            <div className="lg:col-span-4 space-y-6 sticky top-24 self-start">
               
               {/* Contact Card */}
-              <div className="bg-brand-cream/30 border border-brand-light-gray p-6 rounded-md shadow-xs sticky top-24">
+              <div className="bg-brand-cream/30 border border-brand-light-gray p-6 rounded-md shadow-xs">
                 <h3 className="font-serif text-lg font-semibold text-brand-navy mb-3 border-b border-brand-light-gray pb-2">
                   🏛️ The Lawyers Practice
                 </h3>
