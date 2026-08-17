@@ -94,11 +94,26 @@ export default function ArticleDetailPage({ params }) {
                   remarkPlugins={[remarkGfm]}
                   components={{
                     h1: ({ node, ...props }) => null, // Skip duplicate main title
-                    h2: ({ node, ...props }) => (
-                      <h2 className="font-serif text-xl sm:text-2xl md:text-3xl font-semibold text-brand-navy mt-8 mb-4 border-b border-brand-light-gray/60 pb-2.5 leading-snug" {...props} />
-                    ),
+                    h2: ({ node, children, ...props }) => {
+                      const textContent = String(children);
+                      if (textContent.startsWith('Q') && textContent.includes(':')) {
+                        return (
+                          <h2 className="font-serif text-lg sm:text-xl font-bold text-brand-burgundy mt-7 mb-3 flex items-start gap-2 bg-brand-cream/40 p-3 rounded-md border-l-4 border-brand-burgundy" {...props}>
+                            <span>{children}</span>
+                          </h2>
+                        );
+                      }
+                      return (
+                        <h2 className="font-serif text-xl sm:text-2xl md:text-3xl font-semibold text-brand-navy mt-10 mb-4 border-b border-brand-light-gray/60 pb-2.5 leading-snug tracking-tight" {...props}>
+                          {children}
+                        </h2>
+                      );
+                    },
                     h3: ({ node, ...props }) => (
-                      <h3 className="font-serif text-lg sm:text-xl font-semibold text-brand-navy mt-6 mb-3 leading-snug" {...props} />
+                      <h3 className="font-serif text-lg sm:text-xl font-semibold text-brand-navy mt-7 mb-3 leading-snug" {...props} />
+                    ),
+                    h4: ({ node, ...props }) => (
+                      <h4 className="font-sans text-sm sm:text-base font-bold text-brand-navy mt-5 mb-2 leading-snug" {...props} />
                     ),
                     p: ({ node, ...props }) => (
                       <p className="text-xs sm:text-sm md:text-base text-brand-navy/85 leading-relaxed mb-4 font-normal" {...props} />
@@ -119,13 +134,49 @@ export default function ArticleDetailPage({ params }) {
                       <li className="pl-1" {...props} />
                     ),
                     blockquote: ({ node, ...props }) => (
-                      <blockquote className="bg-brand-cream/60 border-l-4 border-amber-500 p-4 md:p-5 rounded-sm text-xs sm:text-sm md:text-base text-brand-navy my-6 font-medium shadow-xs leading-relaxed" {...props} />
+                      <blockquote className="bg-gradient-to-r from-brand-cream/80 to-brand-cream/40 border-l-4 border-amber-500 p-4 md:p-5 rounded-r-md text-xs sm:text-sm md:text-base text-brand-navy my-6 font-medium shadow-xs leading-relaxed" {...props} />
                     ),
                     hr: ({ node, ...props }) => (
                       <hr className="my-8 border-brand-light-gray/70" {...props} />
                     ),
-                    a: ({ node, ...props }) => (
-                      <a className="text-brand-burgundy font-semibold hover:underline" {...props} />
+                    a: ({ node, href, children, ...props }) => {
+                      const isExternal = href?.startsWith('http') || href?.startsWith('https');
+                      if (isExternal) {
+                        return (
+                          <a
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-emerald-700 font-semibold hover:underline bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 text-xs sm:text-sm transition-colors my-0.5"
+                            {...props}
+                          >
+                            <span>{children}</span>
+                          </a>
+                        );
+                      }
+                      return (
+                        <Link
+                          href={href || '#'}
+                          className="inline-flex items-center gap-1 text-brand-burgundy font-semibold hover:underline bg-brand-burgundy/5 px-2 py-0.5 rounded border border-brand-burgundy/15 text-xs sm:text-sm transition-colors my-0.5"
+                          {...props}
+                        >
+                          <span>{children}</span>
+                        </Link>
+                      );
+                    },
+                    table: ({ node, ...props }) => (
+                      <div className="overflow-x-auto my-6 rounded-md border border-brand-light-gray">
+                        <table className="w-full text-xs sm:text-sm text-left text-brand-navy border-collapse" {...props} />
+                      </div>
+                    ),
+                    thead: ({ node, ...props }) => (
+                      <thead className="bg-brand-navy text-brand-paper uppercase font-serif text-[11px] tracking-wider" {...props} />
+                    ),
+                    th: ({ node, ...props }) => (
+                      <th className="px-4 py-3 border-b border-brand-light-gray font-semibold" {...props} />
+                    ),
+                    td: ({ node, ...props }) => (
+                      <td className="px-4 py-3 border-b border-brand-light-gray/60" {...props} />
                     ),
                   }}
                 >
