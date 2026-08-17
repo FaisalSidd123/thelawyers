@@ -117,12 +117,12 @@ export default function CompanyRegistrationCompliance() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="bg-brand-paper border border-brand-light-gray rounded-md overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group"
                 >
-                  <div className="relative w-full h-32 md:h-48 bg-brand-navy/5 overflow-hidden">
+                  <div className="relative w-full h-36 md:h-52 bg-brand-navy/90 p-1 overflow-hidden">
                     <Image
                       src={service.image}
                       alt={service.title}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-contain group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   <div className="p-3 md:p-6 flex flex-col flex-grow">

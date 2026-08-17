@@ -45,13 +45,15 @@ export default function PswRegistration() {
                 </a>
               </div>
             </div>
-            <div className="flex-1 w-full relative">
-              <div className="relative w-full aspect-video md:aspect-square max-w-lg mx-auto rounded-md overflow-hidden shadow-2xl border border-brand-paper/10">
+            <div className="flex-1 w-full relative flex items-center justify-center">
+              <div className="relative w-full max-w-lg mx-auto rounded-lg overflow-hidden shadow-2xl border border-brand-paper/15 bg-brand-navy/60 p-1 md:p-2">
                 <Image
                   src="/sevices images/Chamber of Commerce Registration.jpeg"
                   alt="PSW Registration"
-                  fill
-                  className="object-cover"
+                  width={700}
+                  height={700}
+                  className="w-full h-auto object-contain rounded-md"
+                  priority
                 />
               </div>
             </div>
