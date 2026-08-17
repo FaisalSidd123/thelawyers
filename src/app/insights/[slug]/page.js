@@ -140,14 +140,17 @@ export default function ArticleDetailPage({ params }) {
                       <hr className="my-8 border-brand-light-gray/70" {...props} />
                     ),
                     a: ({ node, href, children, ...props }) => {
-                      const isExternal = href?.startsWith('http') || href?.startsWith('https');
+                      const isWhatsApp = href?.includes('wa.me') || href?.includes('whatsapp') || href === '/contact' || href?.includes('contact');
+                      const targetUrl = isWhatsApp ? 'https://wa.me/923073685421?text=Hello%20The%20Lawyers%2C%20I%20have%20an%20inquiry%20regarding%20legal%20services.' : (href || '#');
+                      const isExternal = isWhatsApp || href?.startsWith('http') || href?.startsWith('https');
+
                       if (isExternal) {
                         return (
                           <a
-                            href={href}
+                            href={targetUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-emerald-700 font-semibold hover:underline bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 text-xs sm:text-sm transition-colors my-0.5"
+                            className="inline-flex items-center gap-1.5 text-emerald-700 font-semibold hover:underline bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200 text-xs sm:text-sm transition-colors my-1 shadow-2xs"
                             {...props}
                           >
                             <span>{children}</span>
@@ -156,7 +159,7 @@ export default function ArticleDetailPage({ params }) {
                       }
                       return (
                         <Link
-                          href={href || '#'}
+                          href={targetUrl}
                           className="inline-flex items-center gap-1 text-brand-burgundy font-semibold hover:underline bg-brand-burgundy/5 px-2 py-0.5 rounded border border-brand-burgundy/15 text-xs sm:text-sm transition-colors my-0.5"
                           {...props}
                         >
@@ -165,18 +168,18 @@ export default function ArticleDetailPage({ params }) {
                       );
                     },
                     table: ({ node, ...props }) => (
-                      <div className="overflow-x-auto my-6 rounded-md border border-brand-light-gray">
-                        <table className="w-full text-xs sm:text-sm text-left text-brand-navy border-collapse" {...props} />
+                      <div className="overflow-x-auto my-6 rounded-md border border-brand-light-gray shadow-xs">
+                        <table className="w-full text-xs sm:text-sm text-left border-collapse" {...props} />
                       </div>
                     ),
                     thead: ({ node, ...props }) => (
                       <thead className="bg-brand-navy text-brand-paper uppercase font-serif text-[11px] tracking-wider" {...props} />
                     ),
                     th: ({ node, ...props }) => (
-                      <th className="px-4 py-3 border-b border-brand-light-gray font-semibold" {...props} />
+                      <th className="px-4 py-3.5 bg-brand-navy text-brand-paper [&_*]:text-brand-paper border-b border-brand-paper/20 font-bold text-xs uppercase tracking-wider text-left" {...props} />
                     ),
                     td: ({ node, ...props }) => (
-                      <td className="px-4 py-3 border-b border-brand-light-gray/60" {...props} />
+                      <td className="px-4 py-3 border-b border-brand-light-gray/60 text-brand-navy/90 font-medium" {...props} />
                     ),
                   }}
                 >
