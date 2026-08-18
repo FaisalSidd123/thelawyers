@@ -322,7 +322,7 @@ export default function Navbar({ onOpenConsultation }) {
                 Book Consultation
               </Link>
               <a
-                href="https://wa.me/923366050615"
+                href="https://wa.me/923073685421"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full text-center bg-transparent border border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white py-3.5 rounded-sm text-xs font-semibold tracking-widest uppercase flex items-center justify-center gap-2 transition-colors"

@@ -189,7 +189,7 @@ Whether you need help **filing a new trademark**, **conducting a pre-filing sear
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [💬 Chat with Our IP Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -401,7 +401,7 @@ Don't let registration mistakes jeopardize your business identity. **The Lawyers
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [💬 Chat with Our IP Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -518,7 +518,7 @@ From pre-filing TM-55 searches and Nice classification mapping to handling Regis
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [💬 Chat with Our IP Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -628,7 +628,7 @@ At **The Lawyers**, we offer comprehensive Intellectual Property services, inclu
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [💬 Chat with Our IP Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -754,7 +754,7 @@ At **The Lawyers**, we handle complete intellectual property management:
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [💬 Chat with Our IP Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -873,7 +873,7 @@ Navigating trade mark classifications, drafting application responses, and overc
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [💬 Chat with Our IP Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -1008,7 +1008,7 @@ Navigating trade mark filings, class selections, registry objections, and opposi
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [💬 Chat with Our IP Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -1119,7 +1119,7 @@ Don't let your trade mark application get bogged down by registry objections or 
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [💬 Chat with Our IP Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -1247,7 +1247,7 @@ Filing Form TM-1 correctly ensures your brand avoids years of administrative del
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [Contact The Lawyers Today](/contact) or [Chat with Our IP Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -1362,7 +1362,7 @@ Secure your brand rights and ensure full regulatory compliance. Reach out to **T
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [Contact The Lawyers Today](/contact) or [Chat with Our IP Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -1461,7 +1461,7 @@ Secure your brand identity and enforce your legal rights with guidance from expe
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [Contact The Lawyers Today](/contact) or [Chat with Our IP Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -1534,7 +1534,7 @@ Protect your brand identity with expert legal representation from experienced Ad
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [Contact The Lawyers Today](/contact) or [Chat with Our IP Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -1607,7 +1607,7 @@ Ready to secure exclusive rights to your name, logo, or slogan?
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [Contact The Lawyers Today](/contact) or [Chat with Our IP Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -1765,7 +1765,7 @@ Ready to secure exclusive legal rights to your brand name and logo? Contact **Th
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [Contact The Lawyers Today](/contact) or [Chat with Our IP Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -1889,7 +1889,7 @@ At **The Lawyers**, we handle the entire corporate formation process so you can 
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 **[Click Here to Register Your SMC](/contact)   |   [Contact Our Legal Team Today](/contact)**
 `
@@ -2038,7 +2038,7 @@ At **The Lawyers**, we handle the entire process from start to finish—allowing
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 **[Click Here to Register Your SMC](/contact)   |   [Contact Our Legal Team Today](/contact)**
 `
@@ -2179,7 +2179,7 @@ At **The Lawyers**, our corporate law team provides comprehensive legal and tax 
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [**👉 Click Here to Start Your SMC Registration with The Lawyers Today**](/contact)
 `
@@ -2307,7 +2307,7 @@ Managing statutory deadlines, drafting corporate resolutions, and maintaining re
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [**👉 Click Here to Schedule an SECP Compliance with The Lawyers**](/contact)
 `
@@ -2412,7 +2412,7 @@ At **The Lawyers**, we handle every step of your corporate journey—ensuring yo
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [**👉 Click Here to Register Your Single Member Company with The Lawyers Today**](/contact)
 `
@@ -2518,7 +2518,7 @@ Structuring an SMC requires careful compliance with the **Companies Act, 2017** 
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [**👉 Click Here to Register Your Single Member Company with The Lawyers Today**](/contact)
 `
@@ -2581,7 +2581,7 @@ The eligibility criteria for who can act as a company's statutory auditor depend
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 **💬 Click Here to Consult Our Corporate Practice on WhatsApp**
 `
@@ -2744,7 +2744,7 @@ Setting up a business structure requires careful legal planning, registration, a
 
 ✉️ **Email:** info@thelawyers.pk
 
-📞 **Direct Line / WhatsApp:** +92 307 3685421 / +92 336 6050615
+📞 **Direct Line / WhatsApp:** +92 307 3685421
 
 [**Click Here to Message Us Directly on WhatsApp**](/contact)
 `
@@ -2913,7 +2913,7 @@ Whether you need a **Special Power of Attorney drafted**, ** overseas NADRA/MOFA
 
 **✉️ Email: info@thelawyers.pk**
 
-**📞 Direct Line / WhatsApp: +92 307 3685421 / +92 336 6050615**
+**📞 Direct Line / WhatsApp: +92 307 3685421**
 
 [Contact The Lawyers Today](/contact) or [Chat with Our Legal Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -3022,7 +3022,7 @@ Whether you are involved in a **property dispute in District Court**, filing a *
 
 **✉️ Email: info@thelawyers.pk**
 
-**📞 Direct Line / WhatsApp: +92 307 3685421 / +92 336 6050615**
+**📞 Direct Line / WhatsApp: +92 307 3685421**
 
 [Contact The Lawyers Today](/contact) or [Chat with Our Legal Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -3134,7 +3134,7 @@ Whether you need **trial representation in District Court**, **Writ filings in H
 
 **✉️ Email: info@thelawyers.pk**
 
-**📞 Direct Line / WhatsApp: +92 307 3685421 / +92 336 6050615**
+**📞 Direct Line / WhatsApp: +92 307 3685421**
 
 [Contact The Lawyers Today](/contact) or [Chat with Our Legal Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -3220,7 +3220,7 @@ If you require legal representation, corporate advisory, or intellectual propert
 
 **✉️ Email: info@thelawyers.pk**
 
-**📞 Direct Line / WhatsApp: +92 307 3685421 / +92 336 6050615**
+**📞 Direct Line / WhatsApp: +92 307 3685421**
 
 [Contact The Lawyers Today](/contact) or [Chat with Our Legal Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -3330,7 +3330,7 @@ If you need legal assistance with cheque recovery, filing a criminal complaint, 
 
 **✉️ Email: info@thelawyers.pk**
 
-**📞 Direct Line / WhatsApp: +92 307 3685421 / +92 336 6050615**
+**📞 Direct Line / WhatsApp: +92 307 3685421**
 
 [Contact The Lawyers Today](/contact) or [Chat with Our Legal Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -3426,7 +3426,7 @@ For legal representation, case evaluation, or urgent assistance with Section 489
 
 **✉️ Email: info@thelawyers.pk**
 
-**📞 Direct Line / WhatsApp: +92 307 3685421 / +92 336 6050615**
+**📞 Direct Line / WhatsApp: +92 307 3685421**
 
 [Contact The Lawyers Today](/contact) or [Chat with Our Legal Team on WhatsApp](https://wa.me/923073685421)
 `
@@ -3502,7 +3502,7 @@ At **The Lawyers**, our legal team specializes in labor law compliance, corporat
 
 **✉️ Email: info@thelawyers.pk**
 
-**📞 Direct Line / WhatsApp: +92 307 3685421 / +92 336 6050615**
+**📞 Direct Line / WhatsApp: +92 307 3685421**
 
 [Contact The Lawyers Today](/contact) or [Chat with Our Legal Team on WhatsApp](https://wa.me/923073685421)
 `

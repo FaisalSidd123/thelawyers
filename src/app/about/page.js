@@ -270,7 +270,7 @@ export default function AboutPage() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="https://wa.me/923366050615?text=Hello%2C%20I%20want%20to%20discuss%20my%20legal%20needs."
+                href="https://wa.me/923073685421?text=Hello%2C%20I%20want%20to%20discuss%20my%20legal%20needs."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3.5 rounded-sm text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-md cursor-pointer"
@@ -280,7 +280,7 @@ export default function AboutPage() {
               </a>
 
               <a
-                href="tel:+923366050615"
+                href="tel:+923073685421"
                 className="w-full sm:w-auto bg-brand-navy hover:bg-brand-navy/90 text-brand-paper px-8 py-3.5 rounded-sm text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-md cursor-pointer"
               >
                 <Phone className="w-4 h-4 text-amber-300" />

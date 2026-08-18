@@ -21,7 +21,7 @@ export default function LeadCaptureBar() {
       const waText = encodeURIComponent(
         `Hello! I need immediate legal assistance for ${service}. My contact phone number is ${phone}. Please call me back.`
       );
-      window.open(`https://wa.me/923366050615?text=${waText}`, '_blank');
+      window.open(`https://wa.me/923073685421?text=${waText}`, '_blank');
     }, 600);
   };
 

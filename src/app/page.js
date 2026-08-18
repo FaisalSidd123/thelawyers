@@ -79,7 +79,7 @@ export default function Home() {
       const waMessage = encodeURIComponent(
         `Hello The Lawyers!\n\nName: ${formData.name}\nPhone: ${formData.phone}\nService Needed: ${formData.service}\nDetails: ${formData.message}`
       );
-      window.open(`https://wa.me/923366050615?text=${waMessage}`, '_blank');
+      window.open(`https://wa.me/923073685421?text=${waMessage}`, '_blank');
     }, 1000);
   };
 
@@ -171,7 +171,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="https://wa.me/923366050615?text=Hello%2C%20I%20need%20to%20speak%20to%20a%20litigation%20lawyer%20regarding%20a%20court%20matter."
+                  href="https://wa.me/923073685421?text=Hello%2C%20I%20need%20to%20speak%20to%20a%20litigation%20lawyer%20regarding%20a%20court%20matter."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto bg-brand-paper/15 hover:bg-brand-paper/25 text-brand-paper border border-brand-paper/30 backdrop-blur-md px-6 py-3.5 rounded-sm text-xs sm:text-sm font-semibold tracking-wider uppercase transition-all duration-300 shadow-lg flex items-center justify-center gap-2 cursor-pointer"
@@ -483,7 +483,7 @@ export default function Home() {
                     </button>
 
                     <a
-                      href="https://wa.me/923366050615?text=Hello%20The%20Lawyers%2C%20I%20need%20immediate%20legal%20guidance."
+                      href="https://wa.me/923073685421?text=Hello%20The%20Lawyers%2C%20I%20need%20immediate%20legal%20guidance."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3.5 rounded-sm text-xs font-semibold uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-md"

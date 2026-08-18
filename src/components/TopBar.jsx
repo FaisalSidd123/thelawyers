@@ -15,11 +15,11 @@ export default function TopBar() {
           </span>
           <span className="hidden md:inline text-brand-paper/30">|</span>
           <a 
-            href="tel:+923366050615" 
+            href="tel:+923073685421" 
             className="flex items-center gap-1.5 text-brand-paper/90 hover:text-amber-300 transition-colors font-medium"
           >
             <Phone className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-            <span>+92 336 6050615</span>
+            <span>+92 307 3685421</span>
           </a>
           <span className="hidden md:inline text-brand-paper/30">|</span>
           <a 
@@ -34,7 +34,7 @@ export default function TopBar() {
         {/* Top Right Options */}
         <div className="flex items-center gap-4 text-[11px] md:text-xs">
           <a
-            href="https://wa.me/923366050615?text=Hello%2C%20I%20would%20like%20a%20legal%20consultation."
+            href="https://wa.me/923073685421?text=Hello%2C%20I%20would%20like%20a%20legal%20consultation."
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-brand-paper/90 hover:text-amber-300 font-medium transition-colors"
@@ -44,7 +44,7 @@ export default function TopBar() {
           </a>
           <span className="text-brand-paper/30">|</span>
           <a
-            href="https://wa.me/923366050615?text=Hello%20The%20Lawyers%2C%20I%20would%20like%20to%20make%20a%20Free%20Quick%20Inquiry%20regarding%20your%20legal%20services."
+            href="https://wa.me/923073685421?text=Hello%20The%20Lawyers%2C%20I%20would%20like%20to%20make%20a%20Free%20Quick%20Inquiry%20regarding%20your%20legal%20services."
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-brand-paper/90 hover:text-amber-300 font-medium transition-colors"

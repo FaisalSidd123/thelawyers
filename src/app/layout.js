@@ -16,11 +16,11 @@ const newsreader = Newsreader({
 
 export const metadata = {
   title: "The Lawyers | Professional Legal Counsel & Advisory",
-  description: "The Lawyers delivers precise, editorial, and modern legal services. Specialized in corporate, property, family, and civil law. Contact +92 336 6050615 or +92 307 3685421.",
+  description: "The Lawyers delivers precise, editorial, and modern legal services. Specialized in corporate, property, family, and civil law. Contact +92 307 3685421.",
   keywords: "The Lawyers, Law Firm Karachi, Legal Services Pakistan, Corporate Law Pakistan, Property Lawyers, Family Court Advocates, Civil Litigation, Immigration Lawyers",
   openGraph: {
     title: "The Lawyers | Professional Legal Counsel",
-    description: "The Lawyers delivers precise, editorial, and modern legal services. Contact +92 336 6050615 or +92 307 3685421.",
+    description: "The Lawyers delivers precise, editorial, and modern legal services. Contact +92 307 3685421.",
     url: "https://thelawyers.pk",
     type: "website",
   },

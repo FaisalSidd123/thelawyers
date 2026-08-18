@@ -70,7 +70,7 @@ export default function ArticleDetailPage({ params }) {
                 <span className="font-medium text-brand-navy">{article.author}</span>
               </div>
               <a
-                href={`https://wa.me/923366050615?text=Hello%2C%20I%20have%20a%20question%20regarding%20the%20article%3A%20${encodeURIComponent(article.title)}`}
+                href={`https://wa.me/923073685421?text=Hello%2C%20I%20have%20a%20question%20regarding%20the%20article%3A%20${encodeURIComponent(article.title)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-emerald-600 font-semibold hover:underline"
@@ -197,7 +197,7 @@ export default function ArticleDetailPage({ params }) {
                 </p>
                 <div className="flex flex-col sm:flex-row items-center gap-4">
                   <a
-                    href="https://wa.me/923366050615?text=Hello%20The%20Lawyers%2C%20I%20need%20assistance%20regarding%3A%20"
+                    href="https://wa.me/923073685421?text=Hello%20The%20Lawyers%2C%20I%20need%20assistance%20regarding%3A%20"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-sm text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2"
@@ -206,7 +206,7 @@ export default function ArticleDetailPage({ params }) {
                     <span>Chat with IP Team on WhatsApp</span>
                   </a>
                   <a
-                    href="tel:+923366050615"
+                    href="tel:+923073685421"
                     className="w-full sm:w-auto bg-brand-burgundy hover:bg-red-800 text-white px-6 py-3 rounded-sm text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2"
                   >
                     <Phone className="w-4 h-4" />
@@ -230,7 +230,7 @@ export default function ArticleDetailPage({ params }) {
                 <div className="space-y-3 text-xs border-t border-brand-light-gray/60 pt-4">
                   <div className="flex items-center gap-2">
                     <Phone className="w-4 h-4 text-brand-burgundy" />
-                    <span className="font-medium">+92 336 6050615 / +92 307 3685421</span>
+                    <span className="font-medium">+92 307 3685421</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-brand-burgundy" />

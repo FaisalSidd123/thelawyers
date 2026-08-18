@@ -20,7 +20,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3 mt-2">
               <a
-                href="https://wa.me/923366050615"
+                href="https://wa.me/923073685421"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-3 py-1.5 bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white rounded-full text-xs font-medium transition-colors"
@@ -30,7 +30,7 @@ export default function Footer() {
                 <span>WhatsApp</span>
               </a>
               <a
-                href="tel:+923366050615"
+                href="tel:+923073685421"
                 className="inline-flex items-center gap-2 px-3 py-1.5 bg-brand-burgundy/30 text-amber-300 hover:bg-brand-burgundy hover:text-white rounded-full text-xs font-medium transition-colors"
                 title="Direct Helpline"
               >
@@ -92,7 +92,6 @@ export default function Footer() {
               <div className="flex items-start gap-2.5">
                 <Phone className="w-4 h-4 text-amber-400 mt-0.5 shrink-0" />
                 <div className="flex flex-col gap-0.5">
-                  <a href="tel:+923366050615" className="hover:text-amber-300 transition-colors">+92 336 6050615</a>
                   <a href="tel:+923073685421" className="hover:text-amber-300 transition-colors">+92 307 3685421</a>
                 </div>
               </div>
@@ -124,7 +123,7 @@ export default function Footer() {
           <div className="flex flex-wrap items-center justify-center md:justify-end gap-5">
             <Link href="/about" className="hover:text-amber-300 transition-colors">About Firm</Link>
             <Link href="/insights" className="hover:text-amber-300 transition-colors">Legal Insights</Link>
-            <a href="https://wa.me/923366050615" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors">Book Consultation</a>
+            <a href="https://wa.me/923073685421" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors">Book Consultation</a>
           </div>
         </div>
 

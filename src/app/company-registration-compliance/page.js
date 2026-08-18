@@ -157,7 +157,7 @@ export default function CompanyRegistrationCompliance() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
-                href="https://wa.me/923366050615"
+                href="https://wa.me/923073685421"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-sm text-sm font-semibold tracking-wider uppercase transition-all shadow-lg"
@@ -165,7 +165,7 @@ export default function CompanyRegistrationCompliance() {
                 Chat on WhatsApp
               </a>
               <a
-                href="tel:+923366050615"
+                href="tel:+923073685421"
                 className="bg-brand-paper/10 hover:bg-brand-paper/20 border border-brand-paper/20 text-brand-paper px-8 py-4 rounded-sm text-sm font-semibold tracking-wider uppercase transition-all"
               >
                 Call Our Legal Team

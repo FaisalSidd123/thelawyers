@@ -28,7 +28,7 @@ export default function PsebRegistration() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://wa.me/923366050615"
+                  href="https://wa.me/923073685421"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-brand-burgundy hover:bg-red-800 text-brand-paper px-8 py-4 rounded-sm text-xs font-semibold uppercase tracking-wider transition-all shadow-md inline-flex items-center justify-center gap-2"
@@ -37,7 +37,7 @@ export default function PsebRegistration() {
                   <span>Register with PSEB Now</span>
                 </a>
                 <a
-                  href="tel:+923366050615"
+                  href="tel:+923073685421"
                   className="bg-brand-paper/10 hover:bg-brand-paper/20 border border-brand-paper/20 text-brand-paper px-8 py-4 rounded-sm text-xs font-semibold uppercase tracking-wider transition-all inline-flex items-center justify-center gap-2"
                 >
                   <Phone className="w-4 h-4" />
@@ -76,7 +76,7 @@ export default function PsebRegistration() {
                 Unregistered IT revenue brought into Pakistan via traditional banking channels may be subjected to unnecessary withholding taxes or delays. Speak with our legal consultants to secure your official PSEB export status.
               </p>
               <a
-                href="https://wa.me/923366050615"
+                href="https://wa.me/923073685421"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-brand-burgundy hover:bg-red-800 text-brand-paper py-3 px-6 rounded-sm text-xs font-semibold uppercase tracking-wider transition-colors"
