@@ -15,14 +15,42 @@ const newsreader = Newsreader({
 });
 
 export const metadata = {
-  title: "The Lawyers | Professional Legal Counsel & Advisory",
-  description: "The Lawyers delivers precise, editorial, and modern legal services. Specialized in corporate, property, family, and civil law. Contact +92 307 3685421.",
-  keywords: "The Lawyers, Law Firm Karachi, Legal Services Pakistan, Corporate Law Pakistan, Property Lawyers, Family Court Advocates, Civil Litigation, Immigration Lawyers",
+  metadataBase: new URL("https://thelawyers.com.pk"),
+  title: {
+    default: "The Lawyers | Professional Legal Counsel & Advisory in Pakistan",
+    template: "%s | The Lawyers Pakistan",
+  },
+  description: "The Lawyers delivers precise, editorial, and modern legal services in Pakistan. Specialized in corporate law, company registration, income tax, sales tax, NTN registration, and civil law. Contact +92 307 3685421.",
+  keywords: "The Lawyers Pakistan, Law Firm Karachi, Legal Services Pakistan, Corporate Law Pakistan, Company Registration Pakistan, NTN Registration, Income Tax Filing, Sales Tax Registration, Property Lawyers, Family Court Advocates, Civil Litigation",
+  authors: [{ name: "The Lawyers" }],
+  creator: "The Lawyers",
+  publisher: "The Lawyers",
+  alternates: {
+    canonical: "https://thelawyers.com.pk",
+  },
   openGraph: {
-    title: "The Lawyers | Professional Legal Counsel",
-    description: "The Lawyers delivers precise, editorial, and modern legal services. Contact +92 307 3685421.",
-    url: "https://thelawyers.pk",
+    title: "The Lawyers | Professional Legal Counsel & Advisory in Pakistan",
+    description: "The Lawyers delivers precise, editorial, and modern legal services in Pakistan. Contact +92 307 3685421.",
+    url: "https://thelawyers.com.pk",
+    siteName: "The Lawyers",
+    locale: "en_PK",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Lawyers | Professional Legal Counsel & Advisory in Pakistan",
+    description: "The Lawyers delivers precise, editorial, and modern legal services in Pakistan. Contact +92 307 3685421.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
