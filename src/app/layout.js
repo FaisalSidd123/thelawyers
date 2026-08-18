@@ -42,7 +42,7 @@ export const metadata = {
     description: "The Lawyers delivers precise, editorial, and modern legal services in Pakistan. Contact +92 307 3685421.",
   },
   verification: {
-    google: "f13473f23346b76d",
+    google: "q9vFPy0gjg9ym2iFA7NavXrU1SlzusFw1tya0PUzt8g",
   },
   robots: {
     index: true,
