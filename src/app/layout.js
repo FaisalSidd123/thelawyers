@@ -20,13 +20,21 @@ export const metadata = {
     default: "The Lawyers | Professional Legal Counsel & Advisory in Pakistan",
     template: "%s | The Lawyers Pakistan",
   },
-  description: "The Lawyers delivers precise, editorial, and modern legal services in Pakistan. Specialized in corporate law, company registration, income tax, sales tax, NTN registration, and civil law. Contact +92 307 3685421.",
+  description: "Top law firm in Pakistan. We handle company registration, NTN & sales tax registration, income tax filing, SECP compliance, and business licensing. Call now: +92 307 3685421 | thelawyers.com.pk",
   keywords: "The Lawyers Pakistan, Law Firm Karachi, Legal Services Pakistan, Corporate Law Pakistan, Company Registration Pakistan, NTN Registration, Income Tax Filing, Sales Tax Registration, Property Lawyers, Family Court Advocates, Civil Litigation",
   authors: [{ name: "The Lawyers" }],
   creator: "The Lawyers",
   publisher: "The Lawyers",
   alternates: {
     canonical: "https://thelawyers.com.pk",
+  },
+  icons: {
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+    ],
+    apple: [
+      { url: "/icon.png", type: "image/png" },
+    ],
   },
   openGraph: {
     title: "The Lawyers | Professional Legal Counsel & Advisory in Pakistan",
