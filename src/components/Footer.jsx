@@ -8,10 +8,10 @@ export default function Footer() {
   return (
     <footer className="bg-brand-navy text-brand-paper/80 pt-12 md:pt-16 pb-8 border-t border-brand-burgundy/40">
       <div className="max-w-7xl mx-auto px-4 md:px-12">
-        
+
         {/* 4-Column Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 pb-10 border-b border-brand-paper/10">
-          
+
           {/* Column 1: Firm Overview */}
           <div className="flex flex-col items-start text-left gap-3">
             <Logo variant="dark" size="normal" />
@@ -87,7 +87,7 @@ export default function Footer() {
             <div className="flex flex-col gap-3 text-xs text-brand-paper/75">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-amber-400 mt-0.5 shrink-0" />
-                <span>Corporate & Litigation Offices in Islamabad & Lahore, Pakistan</span>
+                <span>Corporate & Litigation Offices in Karachi, Islamabad & Lahore, Pakistan</span>
               </div>
               <div className="flex items-start gap-2.5">
                 <Phone className="w-4 h-4 text-amber-400 mt-0.5 shrink-0" />
@@ -97,7 +97,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-amber-400 shrink-0" />
-                <a href="mailto:info@thelawyers.pk" className="hover:text-amber-300 transition-colors">info@thelawyers.pk</a>
+                <a href="mailto:info@thelawyers.com.pk" className="hover:text-amber-300 transition-colors">info@thelawyers.com.pk</a>
               </div>
             </div>
           </div>

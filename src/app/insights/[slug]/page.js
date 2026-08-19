@@ -29,13 +29,13 @@ export default function ArticleDetailPage({ params }) {
   return (
     <SmoothScroll>
       <div className="min-h-screen bg-brand-paper font-sans text-brand-navy selection:bg-brand-burgundy selection:text-brand-paper">
-        
+
         <Navbar />
 
         {/* Article Header Banner */}
         <section className="pt-16 pb-12 md:pt-20 md:pb-16 bg-gradient-to-b from-brand-paper via-brand-cream/30 to-brand-paper border-b border-brand-light-gray/60">
           <div className="max-w-4xl mx-auto px-4 md:px-8">
-            
+
             <Link
               href="/insights"
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-burgundy hover:text-brand-navy transition-colors mb-6"
@@ -76,7 +76,7 @@ export default function ArticleDetailPage({ params }) {
                 className="flex items-center gap-1.5 text-emerald-600 font-semibold hover:underline"
               >
                 <MessageSquare className="w-3.5 h-3.5" />
-                <span>Ask IP Attorney on WhatsApp</span>
+                <span>Ask on WhatsApp</span>
               </a>
             </div>
 
@@ -86,7 +86,7 @@ export default function ArticleDetailPage({ params }) {
         {/* Article Body Content */}
         <section className="py-12 md:py-16 px-4 md:px-8 bg-brand-paper">
           <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
-            
+
             {/* Main Article Content */}
             <div className="lg:col-span-8">
               <div className="prose prose-navy max-w-none text-brand-navy/90">
@@ -203,7 +203,7 @@ export default function ArticleDetailPage({ params }) {
                     className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-sm text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2"
                   >
                     <MessageSquare className="w-4 h-4" />
-                    <span>Chat with IP Team on WhatsApp</span>
+                    <span>Chat on WhatsApp</span>
                   </a>
                   <a
                     href="tel:+923073685421"
@@ -218,7 +218,7 @@ export default function ArticleDetailPage({ params }) {
 
             {/* Sidebar Sticky Panel */}
             <div className="lg:col-span-4 space-y-6 sticky top-24 self-start">
-              
+
               {/* Contact Card */}
               <div className="bg-brand-cream/30 border border-brand-light-gray p-6 rounded-md shadow-xs">
                 <h3 className="font-serif text-lg font-semibold text-brand-navy mb-3 border-b border-brand-light-gray pb-2">

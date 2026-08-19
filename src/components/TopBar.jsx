@@ -6,7 +6,7 @@ export default function TopBar() {
   return (
     <div className="bg-brand-navy text-brand-paper/90 text-xs py-2 px-4 md:px-12 border-b border-brand-paper/10 hidden sm:block">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-        
+
         {/* Top Left Details */}
         <div className="flex items-center gap-4 flex-wrap text-[11px] md:text-xs">
           <span className="flex items-center gap-1.5 opacity-90">
@@ -14,20 +14,20 @@ export default function TopBar() {
             <span className="text-brand-paper/90">Islamabad & Lahore, Pakistan</span>
           </span>
           <span className="hidden md:inline text-brand-paper/30">|</span>
-          <a 
-            href="tel:+923073685421" 
+          <a
+            href="tel:+923073685421"
             className="flex items-center gap-1.5 text-brand-paper/90 hover:text-amber-300 transition-colors font-medium"
           >
             <Phone className="w-3.5 h-3.5 text-amber-400 shrink-0" />
             <span>+92 307 3685421</span>
           </a>
           <span className="hidden md:inline text-brand-paper/30">|</span>
-          <a 
-            href="mailto:info@thelawyers.pk" 
+          <a
+            href="mailto:info@thelawyers.com.pk"
             className="flex items-center gap-1.5 text-brand-paper/90 hover:text-amber-300 transition-colors"
           >
             <Mail className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-            <span>info@thelawyers.pk</span>
+            <span>info@thelawyers.com.pk</span>
           </a>
         </div>
 
