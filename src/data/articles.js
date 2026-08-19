@@ -163,7 +163,7 @@ If you find a conflicting mark in the journal, you have the right to oppose it. 
 
 The clock is ticking—you only have a strict statutory window to file an opposition. Contact **The Lawyers** immediately so our trial advocates can prepare and file a notice of opposition to protect your intellectual property.
 
-[File an Opposition Notice on WhatsApp](https://wa.me/923073685421) | **[ Call Direct ]**
+[File an Opposition Notice on WhatsApp](https://wa.me/923073685421) 
 
 ## What Happens After the Opposition Period Ends?
 

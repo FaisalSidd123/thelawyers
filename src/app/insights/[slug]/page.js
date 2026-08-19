@@ -193,7 +193,7 @@ export default function ArticleDetailPage({ params }) {
                   Need Professional Legal Guidance on This Topic?
                 </h3>
                 <p className="text-xs text-brand-paper/80 mb-6">
-                  Navigating IPO registration, objections, or litigation matters requires experienced Advocates. Get direct advice today.
+                  Navigating registration, objections, or litigation matters requires experienced Advocates. Get direct advice today.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center gap-4">
                   <a

@@ -11,7 +11,7 @@ export default function TopBar() {
         <div className="flex items-center gap-4 flex-wrap text-[11px] md:text-xs">
           <span className="flex items-center gap-1.5 opacity-90">
             <MapPin className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-            <span className="text-brand-paper/90">Islamabad & Lahore, Pakistan</span>
+            <span className="text-brand-paper/90">Karachi, Lahore, & Islamabad, Pakistan</span>
           </span>
           <span className="hidden md:inline text-brand-paper/30">|</span>
           <a
