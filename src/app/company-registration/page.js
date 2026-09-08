@@ -7,6 +7,7 @@ import { CheckCircle2, MessageSquare, Phone } from 'lucide-react';
 import SmoothScroll from '@/components/SmoothScroll';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import RelatedServices from '@/components/RelatedServices';
 
 export default function CompanyRegistration() {
   return (
@@ -21,7 +22,7 @@ export default function CompanyRegistration() {
             <div className="flex-1 text-left">
               <span className="text-amber-400 font-bold uppercase tracking-widest text-xs md:text-sm mb-3 block">Company Registration & Compliance</span>
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-brand-paper font-normal leading-tight mb-6">
-                Professional SECP Company Registration Services in Pakistan
+                Professional Company Registration Services in Pakistan
               </h1>
               <p className="text-brand-paper/80 text-sm md:text-lg leading-relaxed font-light mb-8 max-w-xl">
                 Establish a recognized legal identity for your business. We handle full corporate structuring, SECP incorporations, FBR NTN setup, and post-incorporation compliance.
@@ -213,6 +214,8 @@ export default function CompanyRegistration() {
             </div>
           </div>
         </section>
+
+        <RelatedServices currentSlug="company-registration" />
 
         <Footer />
       </div>

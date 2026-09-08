@@ -7,6 +7,7 @@ import { CheckCircle2, MessageSquare, Phone } from 'lucide-react';
 import SmoothScroll from '@/components/SmoothScroll';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import RelatedServices from '@/components/RelatedServices';
 
 export default function NgoNpoTrustRegistration() {
   return (
@@ -161,6 +162,8 @@ export default function NgoNpoTrustRegistration() {
             </div>
           </div>
         </section>
+
+        <RelatedServices currentSlug="ngo-npo-trust-registration" />
 
         <Footer />
       </div>

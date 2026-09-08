@@ -7,6 +7,7 @@ import { CheckCircle2, MessageSquare, Phone } from 'lucide-react';
 import SmoothScroll from '@/components/SmoothScroll';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import RelatedServices from '@/components/RelatedServices';
 
 export default function PswRegistration() {
   return (
@@ -136,6 +137,8 @@ export default function PswRegistration() {
             </div>
           </div>
         </section>
+
+        <RelatedServices currentSlug="psw-registration" />
 
         <Footer />
       </div>

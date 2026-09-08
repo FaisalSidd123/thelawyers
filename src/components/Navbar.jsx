@@ -29,20 +29,20 @@ export default function Navbar({ onOpenConsultation }) {
   const practiceAreasItems = [
     {
       title: 'Corporate, Tax & Business Registration',
-      desc: 'SECP Company formation, Tax returns, PSEB, Chamber, NGO setup.',
+      desc: 'Company formation, Tax returns, PSEB, Chamber, NGO setup.',
       icon: Building2,
-      href: pathname === '/' ? '#practice-areas' : '/#practice-areas'
+      href: '/company-registration-compliance'
     },
     {
       title: 'Litigation & Dispute Resolution',
       desc: 'Superior & Subordinate court representation for civil, criminal & property.',
       icon: Scale,
-      href: pathname === '/' ? '#practice-areas' : '/#practice-areas'
+      href: pathname === '/' ? '#contact' : '/#contact'
     }
   ];
 
   const registrationServicesItems = [
-    { title: 'SECP Company Formation', href: '/company-registration', badge: 'Popular' },
+    { title: 'Company Formation', href: '/company-registration', badge: 'Popular' },
     { title: 'PSEB IT & Call Center Registration', href: '/pseb-registration', badge: 'Tax Exempt' },
     { title: 'Sales Tax (STRN) & FBR NTN Filing', href: '/sales-tax-registration' },
     { title: 'Chamber of Commerce Membership', href: '/chamber-of-commerce-registration' },

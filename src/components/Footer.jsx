@@ -49,7 +49,7 @@ export default function Footer() {
               <li>
                 <Link href="/company-registration-compliance" className="flex items-center gap-2 hover:text-amber-300 transition-colors group">
                   <ChevronRight className="w-3.5 h-3.5 text-amber-400 shrink-0 group-hover:translate-x-1 transition-transform" />
-                  <span>SECP Company Registration</span>
+                  <span>Company Registration</span>
                 </Link>
               </li>
               <li>

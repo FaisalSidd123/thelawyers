@@ -1,4 +1,5 @@
 import { Inter, Newsreader } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -78,6 +79,18 @@ export default function RootLayout({ children }) {
         {children}
         <GlobalWhatsApp />
       </body>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-18408045210"
+        strategy="afterInteractive"
+      />
+      <Script id="google-tag" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-18408045210');
+        `}
+      </Script>
     </html>
   );
 }

@@ -7,6 +7,7 @@ import { CheckCircle2, MessageSquare, Phone } from 'lucide-react';
 import SmoothScroll from '@/components/SmoothScroll';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import RelatedServices from '@/components/RelatedServices';
 
 export default function PashaRegistration() {
   return (
@@ -191,6 +192,8 @@ export default function PashaRegistration() {
             </div>
           </div>
         </section>
+
+        <RelatedServices currentSlug="pasha-registration" />
 
         <Footer />
       </div>
