@@ -213,8 +213,8 @@ export default function Home() {
                       onClick={() => setBgIndex(idx)}
                       aria-label={`Go to slide ${idx + 1}`}
                       className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${bgIndex === idx
-                          ? 'w-7 bg-amber-400'
-                          : 'w-2 bg-brand-paper/40 hover:bg-brand-paper/70'
+                        ? 'w-7 bg-amber-400'
+                        : 'w-2 bg-brand-paper/40 hover:bg-brand-paper/70'
                         }`}
                     />
                   ))}
@@ -454,6 +454,8 @@ export default function Home() {
                       <option value="Property & Real Estate Dispute">Property & Real Estate Litigation</option>
                       <option value="Family & Child Custody Law">Family & Civil Litigation</option>
                       <option value="Criminal Defense & Bail">Criminal Defense & Bail Matters</option>
+                      <option value="other">Other</option>
+
                     </select>
                   </div>
 
