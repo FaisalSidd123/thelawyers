@@ -42,7 +42,7 @@ export default function Navbar({ onOpenConsultation }) {
   ];
 
   const registrationServicesItems = [
-    { title: 'Company Formation', href: '/company-registration', badge: 'Popular' },
+    { title: 'Company Registration', href: '/company-registration', badge: 'Popular' },
     { title: 'PSEB IT & Call Center Registration', href: '/pseb-registration', badge: 'Tax Exempt' },
     { title: 'Sales Tax (STRN) & FBR NTN Filing', href: '/sales-tax-registration' },
     { title: 'Chamber of Commerce Membership', href: '/chamber-of-commerce-registration' },
@@ -56,11 +56,10 @@ export default function Navbar({ onOpenConsultation }) {
       <TopBar onOpenInquiry={onOpenConsultation} />
 
       <motion.header
-        className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
+        className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
             ? 'bg-brand-paper/95 backdrop-blur-md border-b border-brand-light-gray/60 py-3 shadow-sm'
             : 'bg-brand-paper/90 backdrop-blur-sm border-b border-brand-light-gray/40 py-4'
-        }`}
+          }`}
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -75,9 +74,8 @@ export default function Navbar({ onOpenConsultation }) {
           <nav className="hidden lg:flex items-center gap-7">
             <Link
               href="/"
-              className={`text-[14px] font-medium transition-colors ${
-                pathname === '/' ? 'text-brand-burgundy font-semibold' : 'text-brand-navy/90 hover:text-brand-burgundy'
-              }`}
+              className={`text-[14px] font-medium transition-colors ${pathname === '/' ? 'text-brand-burgundy font-semibold' : 'text-brand-navy/90 hover:text-brand-burgundy'
+                }`}
             >
               Home
             </Link>
@@ -181,18 +179,16 @@ export default function Navbar({ onOpenConsultation }) {
 
             <Link
               href="/about"
-              className={`text-[14px] font-medium transition-colors ${
-                pathname === '/about' ? 'text-brand-burgundy font-semibold' : 'text-brand-navy/90 hover:text-brand-burgundy'
-              }`}
+              className={`text-[14px] font-medium transition-colors ${pathname === '/about' ? 'text-brand-burgundy font-semibold' : 'text-brand-navy/90 hover:text-brand-burgundy'
+                }`}
             >
               About Us
             </Link>
 
             <Link
               href="/insights"
-              className={`text-[14px] font-medium transition-colors ${
-                pathname.startsWith('/insights') ? 'text-brand-burgundy font-semibold' : 'text-brand-navy/90 hover:text-brand-burgundy'
-              }`}
+              className={`text-[14px] font-medium transition-colors ${pathname.startsWith('/insights') ? 'text-brand-burgundy font-semibold' : 'text-brand-navy/90 hover:text-brand-burgundy'
+                }`}
             >
               Legal Insights (Blog)
             </Link>
