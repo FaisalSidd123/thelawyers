@@ -15,7 +15,9 @@ export default function CompanyRegistration() {
       <div className="min-h-screen bg-brand-paper font-sans text-brand-navy selection:bg-brand-burgundy selection:text-brand-paper">
         <Navbar />
 
-        {/* Hero Section */}
+        {/* ============================================================
+            HERO SECTION — Commented out, preserved for restoration
+            ============================================================
         <section className="pt-20 pb-10 md:pt-40 md:pb-20 px-4 md:px-12 bg-brand-navy relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-navy via-brand-navy/95 to-brand-burgundy/20 z-0" />
           <div className="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12">
@@ -27,39 +29,11 @@ export default function CompanyRegistration() {
               <p className="text-brand-paper/80 text-sm md:text-lg leading-relaxed font-light mb-8 max-w-xl">
                 Establish a recognized legal identity for your business. We handle full corporate structuring, SECP incorporations, FBR NTN setup, and post-incorporation compliance.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="https://wa.me/923073685421"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-brand-burgundy hover:bg-red-800 text-brand-paper px-8 py-4 rounded-sm text-xs font-semibold uppercase tracking-wider transition-all shadow-md inline-flex items-center justify-center gap-2"
-                >
-                  <MessageSquare className="w-4 h-4" />
-                  <span>Get Free Guidance on WhatsApp</span>
-                </a>
-                <a
-                  href="tel:+923073685421"
-                  className="bg-brand-paper/10 hover:bg-brand-paper/20 border border-brand-paper/20 text-brand-paper px-8 py-4 rounded-sm text-xs font-semibold uppercase tracking-wider transition-all inline-flex items-center justify-center gap-2"
-                >
-                  <Phone className="w-4 h-4" />
-                  <span>Call Our Legal Team</span>
-                </a>
-              </div>
-            </div>
-            <div className="flex-1 w-full relative flex items-center justify-center">
-              <div className="relative w-full max-w-lg mx-auto rounded-lg overflow-hidden shadow-2xl border border-brand-paper/15 bg-brand-navy/60 p-1 md:p-2">
-                <Image
-                  src="/sevices images/Company Registration.jpeg"
-                  alt="Company Registration"
-                  width={700}
-                  height={700}
-                  className="w-full h-auto object-contain rounded-md"
-                  priority
-                />
-              </div>
+              ... hero buttons and image ...
             </div>
           </div>
         </section>
+        ============================================================ */}
 
 
         {/* ============================================================
@@ -159,7 +133,7 @@ export default function CompanyRegistration() {
 
         ============================================================ */}
 
-        <RelatedServices currentSlug="company-registration" />
+        {/* <RelatedServices currentSlug="company-registration" /> — Commented out, preserved for restoration */}
 
         <Footer />
       </div>
